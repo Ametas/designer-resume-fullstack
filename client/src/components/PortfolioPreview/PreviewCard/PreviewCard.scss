@@ -1,0 +1,9 @@
+@import '../../root';
+
+li.preview-item {
+    background: #ccc;
+    border-radius: 16px;
+    text-align: center;
+    transition: flex $t3;
+    cursor: pointer;
+}

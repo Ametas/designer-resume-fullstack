@@ -1,0 +1,22 @@
+@import '../root';
+
+.hero {
+    height: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    .hero-text {
+        .title {
+            margin-bottom: 20px;
+        }
+        .parag {
+            margin-bottom: 20px;
+        }
+
+        .btns {
+            display: flex;
+            gap: 30px;
+        }
+    }
+}

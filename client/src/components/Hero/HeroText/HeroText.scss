@@ -1,0 +1,23 @@
+@import '../../root';
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    i.round {
+        position: absolute;
+        width: 192px;
+        z-index: 0;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #2b2f42;
+        top: 100px;
+        left: -80px;
+    }
+
+    * {
+        z-index: 1;
+    }
+}

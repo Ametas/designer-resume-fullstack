@@ -1,0 +1,22 @@
+@import '../root';
+
+.border-image {
+    aspect-ratio: 1.5 / 1;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+
+    i.background {
+        position: absolute;
+        right: -70px;
+        top: -100px;
+        z-index: -1;
+    }
+
+    .image-border {
+        height: 100%;
+        width: 100%;
+        border: 10px solid $clr-danger;
+        z-index: 1;
+    }
+}

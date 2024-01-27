@@ -1,0 +1,22 @@
+@import '../root';
+
+.tab {
+    padding: 10px 20px;
+    background: $clr-2;
+    border-radius: 8px;
+    box-shadow: 0 0 30px $clr-3;
+
+    color: inherit;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    font-size: 18px;
+    transition: background $t3;
+
+    &.active {
+        background: $clr-danger;
+    }
+
+    &:hover:not(.active) {
+        background: $clr-1;
+    }
+}

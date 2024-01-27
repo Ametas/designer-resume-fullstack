@@ -1,0 +1,23 @@
+@import './assets/fonts/font-faces.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: OpenSans, system-ui;
+}
+
+html, body {
+    height: 100%;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+body {
+    #root > * {
+        height: 100dvh;
+    }
+}

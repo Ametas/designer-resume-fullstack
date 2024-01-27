@@ -1,0 +1,27 @@
+@import '../root';
+
+.button {
+    padding: 15px 40px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    color: $clr-white;
+    font-size: 16px;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    transition: scale $t3, box-shadow $t1;
+
+    &.primary {
+        background: $clr-danger;
+    }
+
+    &.secondary {
+        background: transparent;
+        border-color: $clr-white;
+    }
+
+    &:hover {
+        box-shadow: 0 0 20px $clr-white;
+        scale: 1.02;
+    }
+}

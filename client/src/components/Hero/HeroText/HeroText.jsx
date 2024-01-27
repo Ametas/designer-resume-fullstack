@@ -1,25 +1,31 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import './HeroText.scss'
 import Button from '../../Button/Button'
 import Paragraph from '../../Paragraph/Paragraph'
 import SupTitle from '../../SupTitle/SupTitle'
 import Title from '../../Title/Title'
 
-export class HeroText extends Component {
-  render() {
+function HeroText() {
+    const [heroData, setHeroData] = useState(null)
+
+    useEffect(() => {
+        fetch('/api/heroText')
+            .then(response => response.json())
+            .then(response => setHeroData(response.header))
+            .catch(e => console.log(e))
+    }, [])
     return (
         <div className="hero-text">
             <i className="round"></i>
-            <SupTitle text='Welcome To My Portfolio' />
-            <Title text='Hello, I‘m Johan Deo Professional Designer.' />
-            <Paragraph text='Conveniently customize proactive web services for leveraged without continualliery aggregate fricctionle ou wellies richard.' />
+            <SupTitle text={ heroData?.supTitle } />
+            <Title text={ heroData?.title } />
+            <Paragraph text={ heroData?.paragraph } />
             <div className='btns'>
-                <Button text='Hire me' />
-                <Button text='Download CV' variable="secondary" />
+                <Button text={ heroData?.btns[0].btnText } />
+                <Button text={ heroData?.btns[1].btnText } variable="secondary" />
             </div>
         </div>
     )
   }
-}
 
 export default HeroText

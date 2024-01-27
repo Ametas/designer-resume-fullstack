@@ -5,13 +5,12 @@ const IP = process.env.APP_IP || 'localhost'
 const PORT = process.env.APP_PORT
 
 const app = express()
+const router = require('./routes/resume.routes')
 
-app.get('/api', (req, res) => {
-    res.json({
-        message: 'hello'
-    })
-})
+app.use('/api', router)
 
 app.listen(PORT, IP, () => {
     console.log(`http://${IP}:${PORT}`);
 })
+
+//index.js

@@ -16,7 +16,7 @@ function MySpecs() {
 
     return (
         <ul className='specs-list'>
-            {spec.map((item, index) => (
+            {spec?.map((item, index) => (
                 <MySpecsItem key={index} values={item.value} title={item.title} />
             ))}
         </ul>

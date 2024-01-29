@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 import './AboutContent.scss'
 
 import SectionTitle from '../../SectionTitle/SectionTitle'
@@ -7,18 +7,25 @@ import Paragraph from '../../Paragraph/Paragraph'
 import MySpecs from '../MySpecs/MySpecs'
 import Button from './../../Button/Button';
 
-export class AboutContent extends Component {
-    render() {
-        return (
-            <div className='about-content'>
-                <SectionTitle data='About Me' />
-                <Title text='Johan Deo' />
-                <Paragraph text="I'm Graphic Designer, and I'm very passionate and dedicated to my work With 20 years experience as a professional Photography, I have lot of acquired the skills and knowledge necessary to make your project a success. I enjoy every step the Photography process, from discussion and collaboration." />
-                <MySpecs />
-                <Button text='Download CV' />
-            </div>
-        )
-    }
+function AboutContent() {
+    const [aboutData, setAboutData] = useState(null)
+
+    useEffect(() => {
+        fetch('api/about')
+            .then(response => response.json())
+            .then(response => setAboutData(response))
+            .catch(error => console.log(error))
+    }, [])
+
+    return (
+        <div className='about-content'>
+            <SectionTitle data='About Me' />
+            <Title text={aboutData?.title} />
+            <Paragraph text={aboutData?.paragraph} />
+            <MySpecs />
+            <Button href={aboutData?.btn.btnHref} text={aboutData?.btn.btnText} />
+        </div>
+    )
 }
 
 export default AboutContent

@@ -11,7 +11,7 @@ function HeroText() {
     useEffect(() => {
         fetch('/api/heroText')
             .then(response => response.json())
-            .then(response => setHeroData(response.header))
+            .then(response => setHeroData(response))
             .catch(e => console.log(e))
     }, [])
     return (

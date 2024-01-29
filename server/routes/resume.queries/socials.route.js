@@ -1,13 +1,13 @@
 const express = require('express')
 const router = express.Router()
-const { getHeroText } = require('../../api/queries/hero-text.query')
+const { getSocialLinks } = require('../../api/queries/socials.query')
 
 router.get('/', async (req, res) => {
     try {
-        const heroTextProps = await getHeroText()
-        res.json(heroTextProps)
+        const data = await getSocialLinks()
+        res.json(data)
     } catch (error) {
-        console.error(error);
+        console.log(error);
         res.status(500).json({
             error: 'Internal server error'
         })
@@ -15,5 +15,3 @@ router.get('/', async (req, res) => {
 })
 
 module.exports = router
-
-//header.route.js

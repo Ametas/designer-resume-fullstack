@@ -1,6 +1,6 @@
 const { connection } = require('../../config/db')
 
-async function getHeroText() {
+async function getSocialLinks() {
     try {
         const db = await connection()
         const collection = db.collection('resumeProperties')
@@ -8,13 +8,9 @@ async function getHeroText() {
         const result = await collection.findOne({}, { 
             projection: {
                 _id: 0, 
-                'header.title': 1, 
-                'header.supTitle': 1, 
-                'header.paragraph': 1, 
-                'header.btns': 1 
+                'header.socials': 1, 
             }
         })
-
         return result.header
     } catch (error) {
         console.error(error);
@@ -22,4 +18,4 @@ async function getHeroText() {
     }
 }
 
-module.exports = { getHeroText }
+module.exports = { getSocialLinks }

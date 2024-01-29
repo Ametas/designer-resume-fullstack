@@ -3,14 +3,15 @@ import { FaInstagram } from "react-icons/fa";
 import './SocialLink.scss'
 
 export class SocialLink extends Component {
-    socialText = this.props.socialText || 'socialText'
-    href = this.props.href || '#'
     render() {
         const { icon: IconComponent } = this.props
         return (
-            <a href={this.href} className='social-link'>
+            <a 
+            target='_blank' 
+            href={`https://${this.props.href}/${this.props.socialText}`} 
+            className='social-link'>
                 <IconComponent />
-                <span className="social-text">{this.socialText}</span>
+                <span className="social-text">{this.props.socialText}</span>
             </a>
         )
     }

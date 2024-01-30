@@ -1,8 +1,19 @@
+//clrs for resume
+
 $clr-1: #1F2235;
 $clr-2: #24263B;
 $clr-3: #171929;
 $clr-danger: #FE461C;
 $clr-white: #fff;
+
+//clrs for order
+
+$clr-01: #4A3AFF;
+$clr-02: #F3F1FF;
+$clr-03: #f7f7fb;
+
+$clr-neutral-600: #6F6C90;
+
 
 $t1: .1s ease;
 $t3: .3s ease;
@@ -10,3 +21,4 @@ $t3: .3s ease;
 body { color: $clr-white; }
 
 a { text-decoration: none; }
+input { &:focus { outline: none; } }

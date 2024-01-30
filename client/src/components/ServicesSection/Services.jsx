@@ -7,9 +7,6 @@ import Title from '../Title/Title'
 import Card from '../Card/Card'
 
 import ComputerGraphic from '../../assets/images/pc-graphic.png'
-import WebDesign from '../../assets/images/web-design.png'
-import UiUx from '../../assets/images/uiux.png'
-import WebDev from '../../assets/images/web-dev.png'
 
 function Services() {
     const [cardData, setCardData] = useState(null)

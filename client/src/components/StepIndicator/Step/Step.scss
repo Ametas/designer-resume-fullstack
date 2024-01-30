@@ -1,0 +1,32 @@
+@import '../../root';
+
+i.step {
+    font-style: normal;
+    font-size: 18px;
+    background: $clr-02;
+    font-weight: 700;
+    width: 50px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    transition: color $t3, background $t3;
+
+    &.active {
+        background: $clr-01;
+        color: $clr-white;
+    }
+}
+
+span.line {
+    height: 10px;
+    width: clamp(10px, 5vw + 20px, 150px);
+    background: $clr-02;
+    border-radius: 50px;
+
+    &.active {
+        background: $clr-01;
+    }
+}

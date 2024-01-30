@@ -1,0 +1,27 @@
+@import '../../root';
+
+.personal-data {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+
+    h4.form-step-title {
+        font-size: 28px;
+    }
+
+    span.form-step-subtitle {
+        color: $clr-neutral-600;
+    }
+
+    .input-box {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        align-items: space-between;
+        height: 100%;
+    }
+}

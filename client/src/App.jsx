@@ -1,21 +1,18 @@
 import './App.scss'
-import Header from './components/HeaderSection/Header';
-import About from './components/AboutSection/About';
-import Portfolio from './components/PortfolioSection/Portfolio';
-import Services from './components/ServicesSection/Services';
-import Resume from './components/ResumeSection/ResumeSection';
-import Testimonial from './components/TestimonialSection/TestimonialSection';
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
+import ResumePage from './pages/ResumePage'
+import OrderPage from './pages/OrderPage'
 
 function App() {
     return (
-        <>
-            <Header />
-            <About />
-            <Portfolio />
-            <Services />
-            <Resume />
-            <Testimonial />
-        </>
+        <Router>
+            <Routes>
+                <Route path="/" element={<ResumePage />} />
+                <Route path="/order" element={<OrderPage />} />
+            </Routes>
+        </Router>
     )
 }
 

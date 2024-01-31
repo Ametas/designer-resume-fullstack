@@ -48,11 +48,12 @@ section.order {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        width: 1000px;
         gap: 30px;
         z-index: 1;
 
         .form-wrapper {
-            width: 70%;
+            width: 100%;
             height: 600px;
             background: $clr-white;
             border-radius: 35px;
@@ -62,6 +63,27 @@ section.order {
             flex-direction: column;
 
             form {
+                flex: 1;
+
+                & > * {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    height: 100%;
+                }
+
+                & > *:first-child {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        .btns {
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+            gap: 60px;
+            & > * {
                 flex: 1;
             }
         }

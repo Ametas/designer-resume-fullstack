@@ -1,0 +1,21 @@
+@import '../../root';
+
+.choose-card {
+    box-shadow: 0 0 20px $clr-02;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: background $t3, 
+                color $t1, 
+                scale $t3;
+    cursor: pointer;
+
+    &:hover, &.active {
+        background: $clr-01;
+        color: $clr-white;
+    }
+}

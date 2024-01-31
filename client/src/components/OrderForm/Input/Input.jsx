@@ -2,7 +2,7 @@ import React from 'react'
 import './Input.scss'
 import { FaPlus } from "react-icons/fa6";
 
-function Input({ id, label, placeholder, autoComplete }) {
+function Input({ id, label, placeholder, type, autoComplete }) {
     
     return (
         <div className='input-wrapper'>
@@ -11,6 +11,7 @@ function Input({ id, label, placeholder, autoComplete }) {
                 <input
                     placeholder={placeholder || 'placeholder'}
                     id={id || 'input'}
+                    type={type || 'text'}
                 />
                 <button className={`auto-complete ${autoComplete ? '' : 'hidden'}`}>
                     <FaPlus />

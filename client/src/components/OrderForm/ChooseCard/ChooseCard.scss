@@ -6,16 +6,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     font-weight: 700;
     font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
     transition: background $t3, 
                 color $t1, 
-                scale $t3;
-    cursor: pointer;
+                scale $t3,
+                box-shadow $t3;
 
     &:hover, &.active {
         background: $clr-01;
         color: $clr-white;
+        box-shadow: none;
     }
 }

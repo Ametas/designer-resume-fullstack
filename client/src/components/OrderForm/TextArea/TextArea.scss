@@ -8,6 +8,7 @@ textarea.form-text-area {
     box-shadow: 0 0 15px $clr-02;
     padding: 20px;
     line-height: 1.6rem;
+    margin: 5px;
 
     &:focus, &:hover {
         border-color: $clr-02;

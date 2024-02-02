@@ -1,9 +1,9 @@
 import React from 'react'
 import './FormBtn.scss'
 
-function FormBtn({ btnText }) {
+function FormBtn({ btnText, onClick, isHide }) {
     return (
-        <button className='form-btn'>
+        <button onClick={onClick} className={`form-btn ${isHide ? "hide" : ""}`}>
             {btnText || 'Button'}
         </button>
     )

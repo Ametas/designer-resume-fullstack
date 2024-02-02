@@ -4,9 +4,9 @@ import FormTitle from '../../FormTitle/FormTitle'
 import FormSubTitle from './../../FormSubTitle/FormSubTitle';
 import Input from './../Input/Input';
 
-function ObjectDetails() {
+function ObjectDetails({ isActive }) {
     return (
-        <div className='object-details'>
+        <div className={`object-details ${isActive ? '' : 'inactive'}`}>
             <FormTitle title="Характеристики объекта"/>
             <FormSubTitle text="Введите основную информацию об объекте."/>
             <div className="input-box">

@@ -4,9 +4,9 @@ import Input from './../Input/Input';
 import FormTitle from './../../FormTitle/FormTitle';
 import FormSubTitle from '../../FormSubTitle/FormSubTitle';
 
-function PersonalData() {
+function PersonalData({ isActive }) {
     return (
-        <div className='personal-data'>
+        <div className={`personal-data ${isActive ? '' : 'inactive'}`}>
             <FormTitle title="Контактная информация"/>
             <FormSubTitle text="Заполните информацию о себе, чтобы мы могли связаться с Вами."/>
             <div className="input-box">

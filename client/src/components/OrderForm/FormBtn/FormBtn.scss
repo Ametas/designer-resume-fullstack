@@ -17,4 +17,8 @@ button.form-btn {
         color: #000;
         border-color: $clr-01;
     }
+
+    &.hide {
+        display: none;
+    }
 }

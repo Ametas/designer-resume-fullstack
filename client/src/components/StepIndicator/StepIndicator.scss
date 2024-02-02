@@ -13,4 +13,8 @@
     span.line:last-child {
         display: none;
     }
+
+    &.hide {
+        display: none;
+    }
 }

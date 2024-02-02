@@ -3,9 +3,9 @@ import './Preferences.scss'
 import FormTitle from './../../FormTitle/FormTitle';
 import Input from './../Input/Input';
 
-function Preferences() {
+function Preferences({ isActive }) {
     return (
-        <div className='preferences'>
+        <div className={`preferences ${isActive ? '' : 'inactive'}`}>
             <FormTitle title="Ваши пожелания и предпочтения"/>
             <div className="input-box">
                 <Input 

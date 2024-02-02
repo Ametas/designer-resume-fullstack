@@ -1,12 +1,13 @@
 import React from 'react'
+import './SpecialRequest.scss'
 import FormTitle from './../../FormTitle/FormTitle';
 import TextArea from './../TextArea/TextArea';
 
-function SpecialRequest() {
+function SpecialRequest({ isActive }) {
     return (
-        <div className='special-request'>
+        <div className={`special-request ${isActive ? '' : 'inactive'}`}>
             <FormTitle title="Особые запросы"/>
-            <TextArea placeholder={"Поле можно оставить пустым, но рекомендуется заполнить, иначе Ваша заявка может быть не рассмотрена."}/>
+            <TextArea placeholder={"Поле не обязательно к заполнению."}/>
         </div>
     )
 }

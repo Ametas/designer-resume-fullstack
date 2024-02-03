@@ -1,21 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Input.scss'
 import { FaPlus } from "react-icons/fa6";
+import Dropdown from '../../Dropdown/Dropdown';
+import { CSSTransition } from 'react-transition-group';
 
-function Input({ id, label, placeholder, type, autoComplete }) {
-    
+function Input(props) {
+    const [open, setOpen] = useState(false)
+
     return (
         <div className='input-wrapper'>
-            <label htmlFor={id || "input"}>{label || 'input label'}</label>
+            <label htmlFor={props.id || "input"}>{props.label || 'input label'}</label>
             <div className="input-container">
                 <input
-                    placeholder={placeholder || 'placeholder'}
-                    id={id || 'input'}
-                    type={type || 'text'}
+                    placeholder={props.placeholder || 'placeholder'}
+                    id={props.id || 'input'}
+                    type={props.type || 'text'}
                 />
-                <button className={`auto-complete ${autoComplete ? '' : 'hidden'}`}>
+                {props.autoComplete && <div 
+                    className={`auto-complete ${props.autoComplete ? '' : 'hidden'}
+                    ${open ? "active" : ""}`}
+                    onClick={() => setOpen(!open)}
+                >
                     <FaPlus />
-                </button>
+                    <CSSTransition
+                        in={open}
+                        unmountOnExit
+                        timeout={{enter: 0, exit: 500}}
+                        classNames={{
+                            enterActive: 'dropdown-show',
+                            enterDone: 'dropdown-show-done',
+                        
+                        }}
+                    >
+                        <Dropdown autoCompleteItems={ props.autoComplete } />
+                    </CSSTransition>
+                </div>}
             </div>
         </div>
     )

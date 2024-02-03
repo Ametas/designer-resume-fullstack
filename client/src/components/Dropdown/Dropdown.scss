@@ -1,0 +1,59 @@
+@import '../root';
+
+.dropdown {
+    position: absolute;
+    bottom: 40px;
+    width: 350px;
+    transform: translateX(-45%);
+    background: $clr-white;
+    border-radius: 18px;
+    border: 2px solid $clr-02;
+    display: flex;
+    flex-direction: column;
+    
+    z-index: 4;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 10px;
+    opacity: 0;
+    max-height: 0;
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    transition: opacity $t1, 
+                max-height $t3;
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: $text-color;
+        border-radius: inherit;
+        border: 1px solid transparent;
+        font-weight: 500;
+        transition: background $t3,
+                    color $t3;
+
+        &:hover {
+            color: $clr-white;
+            background: $clr-01;
+        }
+    }
+
+    //For Animation || CSSTransition
+    &-show {
+        opacity: 0;
+        max-height: 0;
+    }
+    &-show-done {
+        opacity: 1;
+        max-height: 400px;
+    }
+}

@@ -34,7 +34,7 @@
             }
         }
     
-        button.auto-complete {
+        div.auto-complete {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -47,6 +47,7 @@
             aspect-ratio: 1;
             cursor: pointer;
             transition: background $t3;
+            position: relative;
 
             &:hover,
             &.active {

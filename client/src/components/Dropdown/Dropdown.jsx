@@ -1,20 +1,25 @@
 import React, { useState } from 'react'
 import './Dropdown.scss'
 
-function Dropdown({ autoCompleteItems }) {
+function Dropdown({ autoCompleteItems, onSelect }) {
 
-    function DropdownItem(props) {
+    function DropdownItem({ item }) {
+        const handleItemClick = () => { onSelect(item) }
+
         return (
-            <a href="#" className="dropdown-item">
-                {props.children}
+            <a href="#" 
+                className="dropdown-item" 
+                onClick={handleItemClick}
+            >
+                {item}
             </a>
         )
     }
 
     return (
         <div className='dropdown'>
-            {autoCompleteItems.map((item) => (
-                <DropdownItem>{item}</DropdownItem>
+            {autoCompleteItems.map((item, index) => (
+                <DropdownItem key={index} item={item} />
             ))}
             {/* {console.log(autoCompleteItems)} */}
         </div>

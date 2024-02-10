@@ -1,0 +1,31 @@
+@import '../../app/root';
+
+.button {
+    padding: 15px 40px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    color: $clr-white;
+    font-size: 16px;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    transition: border-radius $t3;
+
+    &.primary {
+        background: $clr-danger;
+    }
+
+    &.secondary {
+        background: transparent;
+        border-color: $clr-white;
+    }
+
+    &.tertiary {
+        background: $clr-01;
+        color: $clr-white;
+    }
+
+    &:hover {
+        border-radius: 24px;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../app/root';
+
+.list-item {
+    letter-spacing: .1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color $t3;
+    padding: 10px;
+
+    &:hover, &.active {
+        color: $clr-danger;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}

@@ -1,0 +1,20 @@
+@import '../../app/root';
+
+.indicator-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid $clr-02;
+
+    span:last-child {
+        display: none;
+    }
+
+    &.hide {
+        display: none;
+    }
+}

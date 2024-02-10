@@ -1,0 +1,62 @@
+@import '../../app/root';
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        input {
+            box-shadow: 0 0 20px $clr-02;
+            border-radius: 50px;
+            padding: 20px;
+            border: 0;
+            width: 100%;
+            transition: border $t3, box-shadow $t3;
+            border: 1px solid transparent;
+            font-size: 16px;
+    
+            &::placeholder {
+                color: $clr-neutral-600;
+            }
+
+            &:focus {
+                border: 1px solid $clr-02;
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    
+        div.auto-complete {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: $clr-white;
+            background: $clr-01;
+            border: none;
+            border-radius: 50%;
+            height: 50%;
+            aspect-ratio: 1;
+            cursor: pointer;
+            transition: background $t3;
+            position: relative;
+
+            &:hover,
+            &.active {
+                background: $clr-neutral-600;
+            }
+
+            &.hidden {
+                display: none;
+            }
+        }
+    }
+}

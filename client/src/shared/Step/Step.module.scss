@@ -12,6 +12,7 @@
     justify-content: center;
     border-radius: 50%;
     position: relative;
+    cursor: pointer;
     transition: color $t3, 
                 background $t3;
 
@@ -23,6 +24,10 @@
     &.completed {
         background: $clr-green;
         color: $clr-white;
+    }
+
+    &:hover {
+        background: $clr-neutral-400;
     }
 }
 

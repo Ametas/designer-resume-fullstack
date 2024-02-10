@@ -21,7 +21,6 @@ function Dropdown({ autoCompleteItems, onSelect }) {
             {autoCompleteItems.map((item, index) => (
                 <DropdownItem key={index} item={item} />
             ))}
-            {/* {console.log(autoCompleteItems)} */}
         </div>
     )
 }

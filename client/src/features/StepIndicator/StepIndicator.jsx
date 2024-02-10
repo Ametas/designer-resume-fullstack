@@ -2,7 +2,7 @@ import React from 'react'
 import './StepIndicator.scss'
 import Step from '../../shared/Step/Step';
 
-function StepIndicator({ step, stepCount, isHide }) {
+function StepIndicator({ step, stepCount, isHide, onStepClick }) {
     const steps = Array.from({ length: stepCount }).map((_, index) => index + 1)
 
     return (
@@ -13,6 +13,7 @@ function StepIndicator({ step, stepCount, isHide }) {
                     step={currentStep}
                     isActive={step === currentStep - 1}
                     isCompleted={step >= currentStep}
+                    onClick={() => onStepClick(currentStep - 1)}
                 />
             ))}
         </div>

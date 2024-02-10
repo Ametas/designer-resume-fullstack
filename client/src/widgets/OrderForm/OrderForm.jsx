@@ -19,12 +19,18 @@ export function OrderForm() {
 
     const nextStep = () => { setActiveStep((prev) => Math.min(stepCount, prev + 1)) }
     const prevStep = () => { setActiveStep((prev) => Math.max(0, prev - 1)) }
+    const handleStepClick = (clickedStep) => { setActiveStep(clickedStep) }
 
     return (
         <section className='order'>
             <Container>
                 <div className="form-wrapper">
-                    <StepIndicator isHide={activeStep === 7} stepCount={stepCount} step={activeStep} />
+                    <StepIndicator 
+                        isHide={activeStep === 7} 
+                        stepCount={stepCount} 
+                        step={activeStep} 
+                        onStepClick={handleStepClick}
+                    />
                     <form action="">
                         <PersonalData isActive={activeStep === 0} />
                         <ObjectDetails isActive={activeStep === 1} />

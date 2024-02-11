@@ -13,6 +13,7 @@
     border-radius: 50%;
     position: relative;
     cursor: pointer;
+    user-select: none;
     transition: color $t3, 
                 background $t3;
 
@@ -27,7 +28,8 @@
     }
 
     &:hover {
-        background: $clr-neutral-400;
+        background: $clr-02;
+        color: $text-color;
     }
 }
 

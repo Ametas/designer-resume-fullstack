@@ -1,0 +1,29 @@
+@import '../../app/root';
+
+.theme-switcher {
+    padding: 5px;
+    background: $clr-neutral-400;
+    border-radius: 50%;
+    display: flex;
+
+    .theme-icon {
+        background: $clr-white;
+        border-radius: 50%;
+        display: flex;
+        font-size: 20px;
+        padding: 5px;
+        cursor: pointer;
+        transition: background $t3, color $t1, rotate $t3;
+
+        &:hover {
+            rotate: 360deg;
+        }
+    }
+
+    &.dark {
+        .theme-icon {
+            background: $clr-01;
+            color: $clr-white;
+        }
+    }
+}

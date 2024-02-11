@@ -18,6 +18,12 @@
 }
 @font-face {
     font-family: 'OpenSans';
+    src: url('./OpenSans-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'OpenSans';
     src: url('./OpenSans-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;

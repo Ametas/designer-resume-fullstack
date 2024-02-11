@@ -5,43 +5,7 @@ section.order {
     position: relative;
     z-index: 2;
     color: $text-color;
-
-    &:before, &:after {
-        content: '';
-        position: absolute;
-        width: 350px;
-        aspect-ratio: 1;
-        background: $clr-01;
-        border-radius: 50%;
-        filter: blur(100px);
-        opacity: .3;
-        z-index: -1;
-        animation: background-animation 20s ease infinite;
-    }
-
-    &::before {
-        left: 0;
-        top: 0;
-        transform: translateX(-40%) translateY(-50%);
-    }
-
-    &:after {
-        top: 0;
-        right: 0;
-        transform: translateY(50%);
-    }
-
-    @keyframes background-animation {
-        0%{
-            width: 100px;
-        }
-        50%{
-            width: 400px;
-        }
-        100% {
-            width: 100px;
-        }
-    }
+    transition: background $t3;
 
     .container {
         display: flex;

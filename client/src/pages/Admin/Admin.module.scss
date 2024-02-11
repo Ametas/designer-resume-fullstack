@@ -1,0 +1,7 @@
+@import './root';
+
+.admin {
+    display: grid;
+    grid-template-columns: $sidebar-width 1fr;
+    grid-template-rows: $header-height 1fr;
+}

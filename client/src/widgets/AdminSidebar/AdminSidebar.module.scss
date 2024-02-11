@@ -1,0 +1,22 @@
+@import '../../pages/Admin/root';
+
+.sidebar {
+    background: $cl-2;
+    grid-area: 1 / 1 / span 2 / span 1;
+
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $header-height;
+        font-weight: 700;
+        font-size: 24px;
+
+        span {
+            color: $cl-3;
+        }
+    }
+}

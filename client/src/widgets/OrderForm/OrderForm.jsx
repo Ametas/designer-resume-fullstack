@@ -22,7 +22,7 @@ export function OrderForm() {
     const handleStepClick = (clickedStep) => { setActiveStep(clickedStep) }
 
     return (
-        <section className='order'>
+        <section className={`order`}>
             <Container>
                 <div className="form-wrapper">
                     <StepIndicator 

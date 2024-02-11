@@ -1,6 +1,102 @@
 @import '../../pages/Admin/root';
 
 .header {
-    background: #ccc;
-    grid-area: 1 / 2 / span 1 / span 1;
+    background: $cl-2;
+
+    flex: 0;
+    height: $header-height;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .tools {
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        gap: 20px;
+
+        .sidebar-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: $cl-black;
+            transition: color $s3 ease;
+
+            svg.chevron {
+                font-size: 10px;
+                color: $cl-2;
+                transition: color $s3 ease;
+            }
+
+            &:hover {
+                color: $cl-3;
+
+                svg.chevron {
+                    color: $cl-3;
+                }
+            }
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid $cl-neutral;
+            padding: 0 15px;
+            border-radius: 20px;
+            background: $cl-1;
+            font-size: 20px;
+            transition: border-color $s3 ease, 
+                        color $s3 ease;
+
+            input {
+                border: none;
+                background: inherit;
+                padding: 10px 10px;
+
+                &::placeholder {
+                    letter-spacing: .5px;
+                }
+            }
+
+            &:hover {
+                color: $cl-3;
+                border-color: $cl-3;
+            }
+        }
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        gap: 15px;
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            letter-spacing: .5px;
+            .name {
+                font-weight: 700;
+                font-size: 18px;
+            }
+            .role {
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+        .user-image {
+            width: calc($header-height - 15px);
+            border-radius: 50%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border: 1px solid transparent;
+            outline: 2px solid $cl-3;
+            cursor: pointer;
+        }
+    }
 }

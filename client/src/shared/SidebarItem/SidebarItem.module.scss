@@ -6,27 +6,34 @@
     gap: 15px;
     display: flex;
     align-items: center;
-    justify-content: start;
-    font-size: 18px;
     font-weight: 600;
     letter-spacing: .5px;
     border-radius: 8px;
     cursor: pointer;
     transition: background $s3 ease, 
-                color $s1 ease;
+                color $s1 ease,
+                font-size $s3 ease;
 
-    &:hover {
+    &:hover, &.active {
         background: $cl-3;
         color: $cl-2;
     }
 
     svg {
         font-size: 24px;
+        transition: transform $s3 ease;
     }
 
     svg.chevron {
         font-size: 10px;
         margin-left: auto;
-        color: $cl-2;
+    }
+
+    &.hide {
+        font-size: 0;
+
+        svg {
+            transform: translateX(50%);
+        }
     }
 }

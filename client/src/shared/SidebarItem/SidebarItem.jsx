@@ -1,13 +1,20 @@
 import React from 'react'
 import style from './SidebarItem.module.scss'
+
 import { AiOutlineHome } from "react-icons/ai";
 import { FaChevronRight } from "react-icons/fa6";
 function SidebarItem(props) {
     return (
-        <li className={style[`sidebar-item`]}>
+        <li 
+            className={`
+                ${style[`sidebar-item`]}
+                ${props.isActive && style.active}
+                ${!props.isHide ? style.hide : ""}
+            `}
+        >
             {props.icon || <AiOutlineHome />}
-            {props.text || 'Главная'}
-            <FaChevronRight className={style.chevron} />
+            {props.text}
+            {<FaChevronRight className={style.chevron} />}
         </li>
     )
 }

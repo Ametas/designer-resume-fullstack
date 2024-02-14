@@ -1,0 +1,26 @@
+@import '../../../../pages/Admin/root';
+
+.card {
+    background-color: $cl-2;
+    border-radius: $border-radius;
+    padding: 15px;
+    flex: 1;
+
+    .card-title {
+        font-weight: 600;
+        font-size: 16px;
+        color: $cl-black;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        svg {
+            font-size: 40px;
+        }
+    }
+
+    .card-content {
+        font-size: 50px;
+        font-weight: 700;
+    }
+}

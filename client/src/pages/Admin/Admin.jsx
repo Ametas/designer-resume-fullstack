@@ -6,13 +6,18 @@ import AdminSidebar from '../../widgets/AdminSidebar/AdminSidebar'
 
 function Admin() {
     const [sidebar, setSidebar] = useState(true)
+    const [activeTab, setActiveTab] = useState(0)
+
+    const handleActiveTab = (id) => {
+        setActiveTab(id)
+    }
     
     return (
         <div className={style.admin}>
-            <AdminSidebar isHide={sidebar} />
+            <AdminSidebar isHide={sidebar} onActiveTab={handleActiveTab} />
             <div className={style["content-wrapper"]}>
                 <AdminHeader onClick={() => setSidebar(!sidebar)} />
-                <AdminMain />
+                <AdminMain activeTab={activeTab} />
             </div>         
         </div>
     )

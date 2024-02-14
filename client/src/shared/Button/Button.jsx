@@ -3,7 +3,12 @@ import style from './Button.module.scss'
 
 export function Button(props) {
     return (
-        <button className={style.button + ' ' + style[props.variable]}>{props.text || 'Button'}</button>
+        <button 
+            className={style.button + ' ' + style[props.variable]}
+            onClick={props.onClick}
+        >
+            {props.text || 'Button'}
+        </button>
     )
 }
 

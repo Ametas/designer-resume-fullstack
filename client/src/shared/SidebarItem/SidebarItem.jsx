@@ -11,6 +11,7 @@ function SidebarItem(props) {
                 ${props.isActive && style.active}
                 ${!props.isHide ? style.hide : ""}
             `}
+            onClick={props.onClick}
         >
             {props.icon || <AiOutlineHome />}
             {props.text}

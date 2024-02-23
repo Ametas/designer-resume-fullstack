@@ -1,11 +1,8 @@
 @import '../../../../../pages/Admin/root';
 
 .orders {
-    .order-cards {
-        display: flex;
-        gap: 20px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-    }
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }

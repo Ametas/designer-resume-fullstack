@@ -4,10 +4,14 @@ import style from './Button.module.scss'
 export function Button(props) {
     return (
         <button 
-            className={style.button + ' ' + style[props.variable]}
+            className={
+                style.button + ' ' 
+                + style[props.variable] + ' '
+                + style[props.size]
+            }
             onClick={props.onClick}
         >
-            {props.text || 'Button'}
+            {props.children || 'Button'}
         </button>
     )
 }

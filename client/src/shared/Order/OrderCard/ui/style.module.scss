@@ -1,0 +1,77 @@
+@import '../../../../pages/Admin/root';
+
+.card {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+
+    span {
+        flex: 1;
+        padding: 25px;
+        border-radius: calc($border-radius * .5);
+        box-shadow: 0 0 5px $cl-neutral;
+        position: relative;
+        font-weight: 700;
+        letter-spacing: .8px;
+
+        i {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            font-style: normal;
+            font-size: 12px;
+            color: #ccc;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+        gap: 10px;
+        text-align: center;
+
+        .client-info {
+            display: flex;
+            flex-direction: column;
+            
+            .header {
+                span.id {
+                    flex: 0;
+                }
+            }
+        }
+
+        .placement-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .client-info, 
+        .placement-info {
+            gap: 10px;
+
+            & > div {
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+
+    .details {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .status {
+            flex: 0;
+            display: flex;
+            padding: 0;
+            text-align: center;
+        }
+        .comments {
+            text-indent: 1rem;
+        }
+    }
+}

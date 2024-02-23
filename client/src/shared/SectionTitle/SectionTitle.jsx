@@ -3,7 +3,9 @@ import style from './SectionTitle.module.scss'
 
 export function SectionTitle(props) {
     return (
-        <h2 className={style['section-title']}>{props.data || 'Section title'}</h2>
+        <h2 className={style['section-title']}>
+            {props.children || 'Section title'}
+        </h2>
     )
 }
 

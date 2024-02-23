@@ -4,7 +4,7 @@
     background: $cl-2;
 
     flex: 0;
-    height: $header-height;
+    flex-basis: $header-height;
 
     display: flex;
     align-items: center;

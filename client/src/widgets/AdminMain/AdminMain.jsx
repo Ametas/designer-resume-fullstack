@@ -4,6 +4,13 @@ import style from './AdminMain.module.scss'
 import { Home } from './main/home'
 import { Survey } from './main/survey'
 import { Orders } from './main/orders';
+import { Favourite } from './main/favourite';
+import { HeaderConfig } from './resume/header';
+import { AboutConfig } from './resume/about';
+import { PortfolioConfig } from './resume/portfolio';
+import { ServicesConfig } from './resume/services';
+import { TestimonialConfig } from './resume/testimonials';
+import Header from './../Header/Header';
 
 function AdminMain(props) {
     const tabs = [
@@ -19,6 +26,34 @@ function AdminMain(props) {
             id: 2,
             tab: <Orders />,
         },
+        {
+            id: 3,
+            tab: <Favourite />,
+        },
+        {
+            id: 4,
+            tab: <HeaderConfig />
+        },
+        {
+            id: 5,
+            tab: <AboutConfig />
+        },
+        {
+            id: 6,
+            tab: <PortfolioConfig />
+        },
+        {
+            id: 7,
+            tab: <ServicesConfig />
+        },
+        {
+            id: 8,
+            tab: <ServicesConfig />
+        },
+        {
+            id: 9,
+            tab: <TestimonialConfig />
+        }
     ]
 
     return (

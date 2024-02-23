@@ -1,8 +1,30 @@
 @import '../../../../../pages/Admin/root';
 
 .home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+
     .cards-box {
         display: flex;
         gap: 20px;
+        flex: 0;
+    }
+    .charts-box {
+        display: flex;
+        flex: 1;
+        gap: 20px;
+
+        .chart-item {
+            max-height: 400px;
+            flex: 1;
+            background: $cl-2;
+            padding: 20px;
+            border-radius: $border-radius;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

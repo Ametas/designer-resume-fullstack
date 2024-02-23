@@ -1,3 +1,3 @@
-import Favourites from './ui/Home'
+import { Favourite } from './ui/Favourite'
 
-export { Favourites }
+export { Favourite }

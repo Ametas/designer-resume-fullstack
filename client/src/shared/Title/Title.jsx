@@ -3,7 +3,9 @@ import style from './Title.module.scss'
 
 export function Title(props) {
     return (
-        <h1 className={style.title}>{props.text || 'Title'}</h1>
+        <h1 className={style.title}>
+            {props.children || 'Title'}
+        </h1>
     )
 }
 

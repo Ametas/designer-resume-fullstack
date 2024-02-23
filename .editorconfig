@@ -1,0 +1,6 @@
+[*]
+indent_style = space
+index_size = 2
+
+[*.scss]
+indent_space = 4

@@ -3,7 +3,9 @@ import style from './SupTitle.module.scss'
 
 export function SupTitle(props) {
     return (
-        <h3 className={style['sup-title']}>{props.text || 'SupTitle'}</h3>
+        <h3 className={style['sup-title']}>
+            {props.children || 'SupTitle'}
+        </h3>
     )
 }
 

@@ -4,6 +4,7 @@ import { AdminTitle } from './../../../../../shared/titles/AdminTitle';
 import { Card } from '../../../../../shared/admin/card';
 
 import { FiUsers } from "react-icons/fi";
+import { LineChart } from './../../../../../features/charts/LineChart';
 
 export const Home = () => {
     return (
@@ -14,6 +15,14 @@ export const Home = () => {
                 <Card title={'Всего заказов'} icon={<FiUsers />}>40,000</Card>
                 <Card title={'Всего заказов'} icon={<FiUsers />}>40,000</Card>
                 <Card title={'Всего заказов'} icon={<FiUsers />}>40,000</Card>
+            </div>
+            <div className={style['charts-box']}>
+                <div className={style["chart-item"]}>
+                    <LineChart />
+                </div>
+                <div className={style["chart-item"]}>
+                    <LineChart />
+                </div>
             </div>
         </div>
     )

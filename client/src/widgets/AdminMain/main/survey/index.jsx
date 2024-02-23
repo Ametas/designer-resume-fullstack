@@ -1,3 +1,3 @@
-import Survey from './ui/Survey'
+import { Survey } from './ui/Survey'
 
 export { Survey }

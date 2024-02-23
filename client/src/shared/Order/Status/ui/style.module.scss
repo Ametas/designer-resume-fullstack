@@ -1,0 +1,16 @@
+span.in-progress {
+    background: rgba(98, 38, 239, .2);
+    color: rgba(98, 38, 239);
+}
+span.completed {
+    background: rgba(0, 182, 155, .2);
+    color: rgba(0, 182, 155);
+}
+span.rejected {
+    background: rgba(239, 56, 38, .2);
+    color: rgba(239, 56, 38);
+}
+span.on-holding {
+    background: rgba(255, 167, 86, .2);
+    color: rgba(255, 167, 86);
+}

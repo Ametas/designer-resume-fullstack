@@ -5,6 +5,8 @@
     width: 100%;
 
     .content-wrapper {
+        display: flex;
+        flex-direction: column;
         flex: 1;
         width: 100%;
     }

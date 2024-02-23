@@ -2,9 +2,9 @@
 
 .main {
     flex: 1;
-    height: 100%;
     padding: 30px;
     background: $cl-1;
     border-radius: 18px 0 0 0;
     overflow: auto;
+    display: flex;
 }

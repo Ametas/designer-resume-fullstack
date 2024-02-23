@@ -1,0 +1,14 @@
+@import '../../../../../pages/Admin/root';
+
+.header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

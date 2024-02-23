@@ -1,0 +1,40 @@
+@import '../../../../pages/Admin/root';
+
+.table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  background: $cl-2;
+  border-radius: $border-radius;
+
+  th, td {
+    text-align: left;
+    padding: 20px;
+  }
+
+  thead {
+    border-bottom: 1px solid $cl-neutral;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .8px;
+  }
+
+  thead, tbody {
+    gap: 50px;
+  }
+
+  tr {
+    transition: background $s3 ease;
+    cursor: pointer;
+  }
+
+  tr:hover {
+    background: $cl-1;
+  }
+
+  td span {
+    padding: 10px 15px;
+    border-radius: calc($border-radius * .5);
+    font-weight: 700;
+    letter-spacing: .8px;
+  }
+}

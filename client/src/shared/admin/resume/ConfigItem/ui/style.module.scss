@@ -1,0 +1,23 @@
+@import '../../../../../pages/Admin/root';
+
+.item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background: $cl-2;
+  padding: 20px;
+  border-radius: $border-radius;
+
+  .preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &.dark {
+    background: $cl-dark-2;
+    color: $cl-2;
+  }
+}

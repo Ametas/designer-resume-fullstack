@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import style from './style.module.scss'
-import { AdminTitle } from './../../../../../shared/titles/AdminTitle/ui/AdminTitle';
-import { Input } from '../../../../../shared/admin/input';
-import Button from '../../../../../shared/Button/Button';
+import { AdminTitle } from '@shared/titles/AdminTitle';
+import { Input } from '@shared/admin/input';
+import { Button } from '@shared/Button';
 
 const fakeItems = [
   {

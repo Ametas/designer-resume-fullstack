@@ -4,7 +4,7 @@ import { AdminTitle } from '../../../../../shared/titles/AdminTitle'
 import { OrderList } from '../../../../../shared/Order/OrderList'
 import { Modal } from '../../../../../shared/modal'
 import { OrderCard } from '../../../../../shared/Order/OrderCard'
-import Button from '../../../../../shared/Button/Button'
+import { Button } from '@shared/Button'
 import { FaRegHeart } from "react-icons/fa6";
 
 

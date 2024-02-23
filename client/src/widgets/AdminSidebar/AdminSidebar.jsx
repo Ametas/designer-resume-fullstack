@@ -8,7 +8,8 @@ import { AiOutlineHome, AiOutlinePoweroff } from "react-icons/ai";
 import { MdChecklist } from "react-icons/md";
 import { FiUserCheck } from "react-icons/fi";
 import { IoLogoAmplify } from "react-icons/io5";
-import SidebarItem from '../../shared/SidebarItem/SidebarItem';
+
+import { SidebarItem } from '@shared/SidebarItem';
 
 const sidebarItems = {
     main: [

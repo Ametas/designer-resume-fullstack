@@ -10,7 +10,6 @@ import { AboutConfig } from './resume/about';
 import { PortfolioConfig } from './resume/portfolio';
 import { ServicesConfig } from './resume/services';
 import { TestimonialConfig } from './resume/testimonials';
-import Header from './../Header/Header';
 
 function AdminMain(props) {
     const tabs = [

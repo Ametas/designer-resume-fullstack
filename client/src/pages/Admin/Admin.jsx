@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import style from './Admin.module.scss'
-import AdminHeader from '../../widgets/AdminHeader/AdminHeader'
+import { AdminHeader } from '../../widgets/AdminHeader'
 import AdminMain from '../../widgets/AdminMain/AdminMain'
 import AdminSidebar from '../../widgets/AdminSidebar/AdminSidebar'
-import Header from './../../widgets/Header/Header';
 
 function Admin() {
     const [sidebar, setSidebar] = useState(true)

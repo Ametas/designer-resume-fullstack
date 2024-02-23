@@ -1,17 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import style from './style.module.scss'
-import { AdminTitle } from './../../../../../shared/titles/AdminTitle/ui/AdminTitle';
-import { ConfigItem } from './../../../../../shared/admin/resume/ConfigItem';
-import { SectionTitle } from './../../../../../shared/SectionTitle/SectionTitle';
-import { Title } from './../../../../../shared/Title/Title';
-import { Paragraph } from './../../../../../shared/Paragraph/Paragraph';
-import { Button } from './../../../../../shared/Button/Button';
-import { Input } from '../../../../../shared/admin/input';
+
+import { AdminTitle } from '@shared/titles/AdminTitle/ui/AdminTitle';
+import { ConfigItem } from '@shared/admin/resume/ConfigItem';
+import { SectionTitle } from '@shared/SectionTitle';
+import { Title } from '@shared/Title';
+import { Paragraph } from '@shared/Paragraph';
+import { Button } from '@shared/Button';
 
 
 export const AboutConfig = () => {
-  const [value, setValue] = useState('')
-
 
   return (
     <div className={style.about}>

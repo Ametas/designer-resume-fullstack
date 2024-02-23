@@ -6,7 +6,7 @@ import { DialogTitle } from '@mui/material'
 import { DialogContent } from '@mui/material'
 import { DialogContentText } from '@mui/material'
 import { DialogActions } from '@mui/material'
-import Button from '../../Button/Button'
+import { Button } from '@shared/Button';
 
 export const Modal = (props) => {
     const [open, setOpen] = useState(false)

@@ -1,0 +1,13 @@
+@import '../../../app/root';
+
+.personal-data {
+    .input-box {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        align-items: space-between;
+        height: 100%;
+    }
+}

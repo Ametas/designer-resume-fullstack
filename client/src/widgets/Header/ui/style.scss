@@ -1,0 +1,23 @@
+@import '../../../app/root';
+
+.header {
+    background: $clr-1;
+    position: relative;
+    color: $clr-white;
+
+    .container {
+        display: grid;
+        height: 100%;
+        grid-template-rows: auto 1fr;
+    }
+
+    .socials-box {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 30px;
+        top: 60%;
+        transform: translateY(-50%);
+    }
+}

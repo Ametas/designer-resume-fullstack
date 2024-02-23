@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import style from './style.module.scss'
-import { Button } from './../../../../Button/Button';
+import { Button } from '../../../../Button/ui/Button';
 import { Input } from './../../../input';
 
 export const ConfigItem = (props) => {

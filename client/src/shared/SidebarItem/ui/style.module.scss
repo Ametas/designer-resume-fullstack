@@ -1,0 +1,39 @@
+@import '../../../pages/Admin/root';
+
+.sidebar-item {
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: .5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background $s3 ease, 
+                color $s1 ease,
+                font-size $s3 ease;
+
+    &:hover, &.active {
+        background: $cl-3;
+        color: $cl-2;
+    }
+
+    svg {
+        font-size: 24px;
+        transition: transform $s3 ease;
+    }
+
+    svg.chevron {
+        font-size: 10px;
+        margin-left: auto;
+    }
+
+    &.hide {
+        font-size: 0;
+
+        svg {
+            transform: translateX(50%);
+        }
+    }
+}

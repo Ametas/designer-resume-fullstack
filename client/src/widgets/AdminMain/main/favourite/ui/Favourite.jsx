@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import style from './style.module.scss'
 import { AdminTitle } from '../../../../../shared/titles/AdminTitle'
 import { Modal } from './../../../../../shared/modal';
-import Button from '../../../../../shared/Button/Button';
+import { Button } from '@shared/Button';
 import { FaRegHeart } from "react-icons/fa6";
 import { OrderList } from '../../../../../shared/Order/OrderList';
 import { OrderCard } from '../../../../../shared/Order/OrderCard';

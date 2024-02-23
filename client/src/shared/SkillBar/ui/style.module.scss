@@ -1,0 +1,45 @@
+@import '../../../app/root';
+
+.skill-box {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+
+    .title {
+        font-weight: 500;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        
+        i {
+            font-weight: 500;
+            font-style: normal;
+        }
+    }
+
+    .skill-bar {
+        height: 20px;
+        width: 100%;
+        background: $clr-white;
+        border-radius: 12px;
+        overflow: hidden;
+
+        .skill-percent {
+            height: 100%;
+            border-radius: inherit;
+            background: $clr-danger;
+            opacity: 0;
+            animation: progress .4s ease forwards;
+        }
+
+        @keyframes progress {
+            0% {
+                width: 0;
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}

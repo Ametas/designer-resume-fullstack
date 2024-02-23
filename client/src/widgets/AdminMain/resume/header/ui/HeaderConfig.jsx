@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import style from './style.module.scss'
-import { AdminTitle } from './../../../../../shared/titles/AdminTitle';
-import SupTitle from '../../../../../shared/SupTitle/SupTitle';
-import { Button } from './../../../../../shared/Button/Button';
-import { Title } from './../../../../../shared/Title/Title';
-import { ConfigItem } from '../../../../../shared/admin/resume/ConfigItem';
-import { Paragraph } from './../../../../../shared/Paragraph/Paragraph';
+import { AdminTitle } from '@shared/titles/AdminTitle';
+import { SupTitle } from '@shared/SupTitle';
+import { Button } from '@shared/Button';
+import { Title } from '@shared/Title';
+import { ConfigItem } from '@shared/admin/resume/ConfigItem';
+import { Paragraph } from '@shared/Paragraph';
 
 export const HeaderConfig = () => {
 

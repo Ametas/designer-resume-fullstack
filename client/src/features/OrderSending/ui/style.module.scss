@@ -1,0 +1,12 @@
+@import '../../../app/root';
+
+.order-sending {
+    .cards-box {
+        margin-top: 40px;
+        display: grid;
+        gap: 30px;
+        grid-template-rows: repeat(2, 1fr);
+        height: 100%;
+    }
+}
+

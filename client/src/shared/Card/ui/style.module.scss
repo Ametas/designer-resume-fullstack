@@ -1,0 +1,65 @@
+@import '../../../app/root';
+
+.card {
+    background: $clr-1;
+    padding: 50px 40px;
+    display: grid;
+    gap: 20px;
+    border-radius: 16px;
+    transition: scale $t3, box-shadow $t3;
+
+    &:hover {
+        box-shadow: 0 0 10px $clr-3;
+        scale: 1.03;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .card-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > * {
+            background: $clr-3;
+            padding: 15px;
+        }
+
+        a.action {
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background $t3;
+
+            * {
+                color: $clr-white;
+            }
+            
+            &:hover {
+                background: $clr-danger;
+    
+                + i.action-text {
+                    padding: 15px 40px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        i.action-text {
+            border-radius: 16px;
+            padding: 15px 0;
+            opacity: 0;
+            user-select: none;
+            transition: padding $t3, opacity $t3;
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+}

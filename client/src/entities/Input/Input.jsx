@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import style from './Input.module.scss'
 import { FaPlus } from "react-icons/fa6";
-import Dropdown from '../../features/Dropdown/Dropdown';
+import { Dropdown } from '@features/Dropdown';
 import { CSSTransition } from 'react-transition-group';
 
 function Input(props) {

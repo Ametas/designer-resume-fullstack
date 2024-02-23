@@ -1,16 +1,19 @@
 import React, { useState } from 'react'
 import './OrderForm.scss'
-import StepIndicator from '../../features/StepIndicator/StepIndicator'
-import PersonalData from '../../features/PersonalData/PersonalData'
-import ObjectDetails from '../../features/ObjectDetails/ObjectDetails'
-import PlacementType from '../../features/PlacementType/PlacementType'
-import SpecialRequirements from '../../features/SpecialRequirements/SpecialRequirements'
-import SpecialRequest from '../../features/SpecialRequest/SpecialRequest'
-import Preferences from '../../features/Preferences/Preferences'
-import Commentaries from '../../features/Commentaries/Commentaries'
-import FormBtn from '../../shared/FormBtn/FormBtn'
-import OrderSending from '../../features/OrderSending/OrderSending'
-import Container from '../../shared/Container/Container';
+
+import { StepIndicator } from '@features/StepIndicator'
+
+import { PersonalData } from '@features/PersonalData'
+import { ObjectDetails } from '@features/ObjectDetails'
+import { PlacementType } from '@features/PlacementType'
+import { SpecialRequirements } from '@features/SpecialRequirements'
+import { SpecialRequest } from '@features/SpecialRequest'
+import { Preferences } from '@features/Preferences'
+import { Commentaries } from '@features/Commentaries'
+import { OrderSending } from '@features/OrderSending'
+
+import FormBtn from '@shared/FormBtn/FormBtn'
+import Container from '@shared/Container/Container';
 
 export function OrderForm() {
     const stepCount = 7;

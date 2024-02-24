@@ -15,7 +15,7 @@ export const TestimonialItem = (props) => {
           </div>
           <span className={style['author-role']}>{props.authorRole}</span>
         </div>
-        <Paragraph text={props.text}/>
+        <Paragraph>{props.text}</Paragraph>
       </div>
       <div className={style["author-image"]}>
         <img src={props.img} alt="Author Image" />

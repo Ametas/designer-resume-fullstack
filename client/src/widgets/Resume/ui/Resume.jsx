@@ -14,7 +14,7 @@ export const Resume = (props) => {
       <Container>
         <div className="resume-content">
           <SectionTitle>Resume</SectionTitle>
-          <Title text='Skill & Experience'/>
+          <Title>Skill & Experience</Title>
           <div className="tabs">
             <Tab isActive={true}>Design</Tab>
             <Tab isActive={false}>Experience</Tab>

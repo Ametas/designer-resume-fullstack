@@ -9,12 +9,12 @@ import { Hero } from '@widgets/Hero';
 import { FaTelegramPlane, FaInstagram, FaVk } from "react-icons/fa";
 
 export const Header = () => {
-    const [socialLink, setSocialLink] = useState(null)
+    const [headerProps, setHeaderProps] = useState(null)
 
     useEffect(() => {
-        fetch('/api/socials')
+        fetch('/api/header')
             .then(response => response.json())
-            .then(response => setSocialLink(response.socials))
+            .then(response => setHeaderProps(response.header))
             .catch(error => console.log(error))
     }, [])
 
@@ -22,22 +22,22 @@ export const Header = () => {
         <header className='header'>
             <Container>
                 <Navbar />
-                <Hero />
+                <Hero data={headerProps} />
             </Container>
             <div className="socials-box">
                 <SocialLink 
                     href='instagram.com' 
-                    socialText={socialLink?.instagram} 
+                    socialText={headerProps?.socials.instagram} 
                     icon={FaInstagram} 
                 />
                 <SocialLink 
                     href='telegram.org' 
-                    socialText={socialLink?.telegram} 
+                    socialText={headerProps?.socials.telegram} 
                     icon={FaTelegramPlane } 
                 />
                 <SocialLink 
                     href='vk.com' 
-                    socialText={socialLink?.vk} 
+                    socialText={headerProps?.socials.vk} 
                     icon={FaVk} 
                 />
             </div>

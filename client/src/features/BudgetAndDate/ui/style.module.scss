@@ -1,0 +1,9 @@
+@import '../../../app/root';
+
+.budget-and-date {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+  }
+}

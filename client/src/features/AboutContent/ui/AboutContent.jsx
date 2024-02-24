@@ -7,27 +7,27 @@ import { MySpecs } from '@features/MySpecs';
 import { Title } from '@shared/Title';
 import { Button } from '@shared/Button';
 
-export const AboutContent = () => {
-  const [aboutData, setAboutData] = useState(null)
+export const AboutContent = (props) => {
+  // const [aboutData, setAboutData] = useState(null)
 
-  useEffect(() => {
-    fetch('api/about')
-      .then(response => response.json())
-      .then(response => setAboutData(response))
-      .catch(error => console.log(error))
-  }, [])
+  // useEffect(() => {
+  //   fetch('api/about')
+  //     .then(response => response.json())
+  //     .then(response => setAboutData(response))
+  //     .catch(error => console.log(error))
+  // }, [])
 
   return (
     <div className={style['about-content']}>
       <SectionTitle>About Me</SectionTitle>
-      <Title>{aboutData?.title}</Title>
-      <Paragraph>{aboutData?.paragraph}</Paragraph>
+      <Title>{props.data?.title}</Title>
+      <Paragraph>{props.data?.paragraph}</Paragraph>
       <MySpecs />
       <Button 
-        href={aboutData?.btn.btnHref} 
+        href={props.data?.btn.btnHref} 
         variable={'primary'}
       >
-        {aboutData?.btn.btnText}
+        {props.data?.btn.btnText}
       </Button>
     </div>
   )

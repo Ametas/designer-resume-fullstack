@@ -12,8 +12,11 @@ import { Preferences } from '@features/Preferences'
 import { Commentaries } from '@features/Commentaries'
 import { OrderSending } from '@features/OrderSending'
 
+import { BudgetAndDate } from '@features/BudgetAndDate';
+
 import FormBtn from '@shared/FormBtn/FormBtn'
 import Container from '@shared/Container/Container';
+
 
 export function OrderForm() {
     const stepCount = 7;
@@ -40,7 +43,7 @@ export function OrderForm() {
                         <PlacementType isActive={activeStep === 2} />
                         <SpecialRequirements isActive={activeStep === 3} />
                         <Preferences isActive={activeStep === 4} />
-                        <SpecialRequest isActive={activeStep === 5} />
+                        <BudgetAndDate isActive={activeStep === 5} />
                         <Commentaries isActive={activeStep === 6} />
                         <OrderSending isActive={activeStep === 7} />
                     </form>

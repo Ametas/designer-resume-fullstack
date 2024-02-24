@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import style from './style.module.scss'
 
-import FormTitle from '@shared/FormTitle/FormTitle';
-import FormSubTitle from '@shared/FormSubTitle/FormSubTitle';
+import { FormTitle } from '@shared/FormTitle';
+import { FormSubTitle } from '@shared/FormSubTitle';
 import { ChooseCard } from '@shared/ChooseCard';
 
 export const PlacementType = (props) => {
@@ -18,8 +18,8 @@ export const PlacementType = (props) => {
 
   return (
     <div className={`${style['placement-type']} ${!props.isActive && 'inactive'}`}>
-      <FormTitle title="Тип помещения"/>
-      <FormSubTitle text="Выберите тип помещения."/>
+      <FormTitle>Тип помещения</FormTitle>
+      <FormSubTitle>Выберите тип помещения.</FormSubTitle>
       <div className={style["cards-box"]}>
         {cards.map((card) => (
           <ChooseCard 

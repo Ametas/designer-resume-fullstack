@@ -1,12 +1,10 @@
 import React from 'react'
-import OrderForm from '../widgets/OrderForm/OrderForm';
+import { OrderForm } from '@widgets/OrderForm';
 
 function OrderPage() {
-    return (
-        <>
-            <OrderForm />
-        </>
-    )
+  return (
+    <OrderForm />
+  )
 }
 
 export default OrderPage

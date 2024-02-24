@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './style.module.scss'
-import FormTitle from '@shared/FormTitle/FormTitle';
+
+import { FormTitle } from '@shared/FormTitle';
 import Input from '@entities/Input/Input';
 
 const inputs = [
@@ -32,7 +33,7 @@ const inputs = [
 export const Preferences = (props) => {
   return (
     <div className={`${style['preferences']} ${!props.isActive && 'inactive'}`}>
-      <FormTitle title="Ваши пожелания и предпочтения"/>
+      <FormTitle>Ваши пожелания и предпочтения</FormTitle>
       <div className={style["input-box"]}>
         {inputs.map((input) => (
           <Input 

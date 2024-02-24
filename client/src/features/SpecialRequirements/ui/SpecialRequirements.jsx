@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import style from './style.module.scss'
 
-import FormTitle from '@shared/FormTitle/FormTitle';
+import { FormTitle } from '@shared/FormTitle';
 import { ChooseCard } from '@shared/ChooseCard';
 
 export const SpecialRequirements = (props) => {
@@ -17,7 +17,7 @@ export const SpecialRequirements = (props) => {
 
   return (
     <div className={`${style['special-requierements']} ${!props.isActive && 'inactive'}`}>
-      <FormTitle title="Особые требования"/>
+      <FormTitle>Особые требования</FormTitle>
       <div className={style["cards-box"]}>
         {cards.map((card) => (
           <ChooseCard 

@@ -1,15 +1,15 @@
 import React from 'react'
 import style from './style.module.scss'
 
-import FormTitle from '@shared/FormTitle/FormTitle'
-import FormSubTitle from '@shared/FormSubTitle/FormSubTitle';
+import { FormTitle } from '@shared/FormTitle'
+import { FormSubTitle } from '@shared/FormSubTitle';
 import Input from '@entities/Input/Input';
 
 export const ObjectDetails = (props) => {
   return (
     <div className={`${style['object-details']} ${!props.isActive && 'inactive'}`}>
-      <FormTitle title="Характеристики объекта"/>
-      <FormSubTitle text="Введите основную информацию об объекте."/>
+      <FormTitle>Характеристики объекта</FormTitle>
+      <FormSubTitle>Введите основную информацию об объекте.</FormSubTitle>
       <div className="input-box">
         <Input 
           id="object-square" 

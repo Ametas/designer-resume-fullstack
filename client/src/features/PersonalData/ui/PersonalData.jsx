@@ -2,14 +2,14 @@ import React from 'react'
 import style from './style.module.scss'
 
 import Input from '@entities/Input/Input';
-import FormTitle from '@shared/FormTitle/FormTitle';
-import FormSubTitle from '@shared/FormSubTitle/FormSubTitle';
+import { FormTitle } from '@shared/FormTitle';
+import { FormSubTitle}  from '@shared/FormSubTitle';
 
 export const PersonalData = (props) => {
   return (
   <div className={`${style['personal-data']} ${!props.isActive && 'inactive'}`}>
-    <FormTitle title="Контактная информация"/>
-    <FormSubTitle text="Заполните информацию о себе, чтобы мы могли связаться с Вами."/>
+    <FormTitle>Контактная информация</FormTitle>
+    <FormSubTitle>Заполните информацию о себе, чтобы мы могли связаться с Вами.</FormSubTitle>
     <div className={style['input-box']}>
       <Input 
         id="name" 

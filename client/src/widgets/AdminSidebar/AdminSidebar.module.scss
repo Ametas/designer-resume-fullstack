@@ -1,4 +1,5 @@
-@import '../../pages/Admin/root';
+@import '@roots/ui';
+@import '@roots/admin';
 
 .sidebar {
     background: $cl-2;

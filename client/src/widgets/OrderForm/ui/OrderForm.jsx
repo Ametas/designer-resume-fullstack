@@ -13,17 +13,24 @@ import { OrderSending } from '@features/OrderSending'
 
 import { BudgetAndDate } from '@features/BudgetAndDate';
 
-import FormBtn from '@shared/FormBtn/FormBtn'
+import { FormBtn } from '@shared/FormBtn'
 import Container from '@shared/Container/Container';
 
 export const OrderForm = () => {
   const stepCount = 7;
 
   const [activeStep, setActiveStep] = useState(0)
+  const [formData, setFormData] = useState({})
 
   const nextStep = () => { setActiveStep((prev) => Math.min(stepCount, prev + 1)) }
   const prevStep = () => { setActiveStep((prev) => Math.max(0, prev - 1)) }
+  
   const handleStepClick = (clickedStep) => { setActiveStep(clickedStep) }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(formData)
+  }
 
   return (
     <section className={`order`}>
@@ -35,7 +42,9 @@ export const OrderForm = () => {
             step={activeStep} 
             onStepClick={handleStepClick}
           />
-          <form action="">
+          <form action=""
+            onSubmit={activeStep === stepCount - 1 ? handleSubmit : nextStep}
+          >
             <PersonalData isActive={activeStep === 0} />
             <ObjectDetails isActive={activeStep === 1} />
             <PlacementType isActive={activeStep === 2} />
@@ -55,6 +64,7 @@ export const OrderForm = () => {
           <FormBtn 
             isHide={activeStep === stepCount} 
             btnText={activeStep < stepCount - 1 ? 'Далее' : 'Отправить заявку'} 
+            type='submit'
             onClick={nextStep} 
           />
         </div>

@@ -1,4 +1,4 @@
-@import '../../../app/root';
+@import '@roots/order';
 
 .indicator-wrapper {
     width: 100%;
@@ -8,7 +8,7 @@
     justify-content: space-between;
     padding-bottom: 30px;
 
-    border-bottom: 1px solid $clr-02;
+    border-bottom: 1px solid $clr-2;
 
     span:last-child {
         display: none;

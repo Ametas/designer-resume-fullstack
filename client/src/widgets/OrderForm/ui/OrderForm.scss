@@ -1,10 +1,11 @@
-@import '../../../app/root';
+@import '@roots/ui';
+@import '@roots/order';
 
 section.order {
-    background: $clr-03;
+    background: $clr-1;
     position: relative;
     z-index: 2;
-    color: $text-color;
+    color: $dark-text-clr;
     transition: background $t3;
 
     .container {
@@ -21,7 +22,7 @@ section.order {
             height: 600px;
             background: $clr-white;
             border-radius: 35px;
-            box-shadow: 0 0 100px $clr-02;
+            box-shadow: 0 0 100px $clr-2;
             padding: 50px;
             display: flex;
             flex-direction: column;

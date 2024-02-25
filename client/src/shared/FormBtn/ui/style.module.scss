@@ -1,0 +1,25 @@
+@import '@roots/ui';
+@import '@roots/order';
+
+button.form-btn {
+    padding: 20px 40px;
+    border-radius: $border-radius * 2;
+    border: 1px solid transparent;
+    font-weight: 700;
+    font-size: 18px;
+    background: $clr-3;
+    color: $light-text-clr;
+    cursor: pointer;
+    transition: background $t3,
+                color $t1;
+
+    &:hover {
+        background: $clr-2;
+        color: $dark-text-clr;
+        border-color: $clr-3;
+    }
+
+    &.hide {
+        display: none;
+    }
+}

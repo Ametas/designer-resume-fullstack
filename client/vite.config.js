@@ -13,6 +13,7 @@ export default defineConfig({
       '@pages': '/src/pages',
       '@shared': '/src/shared',
       '@widgets': '/src/widgets',
+      '@roots': '/src/app/roots',
     },
   },
   server: {

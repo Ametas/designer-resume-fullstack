@@ -1,4 +1,5 @@
-@import '../../../../app/root';
+@import '@roots/ui';
+@import '@roots/order';
 
 .budget {
   display: flex;
@@ -7,7 +8,7 @@
   width: 100%;
 
   input {
-    box-shadow: 0 0 5px $clr-02;
+    box-shadow: 0 0 5px $clr-2;
     border-radius: 50px;
     padding: 20px;
     border: 0;
@@ -21,7 +22,7 @@
     }
 
     &:focus {
-        border: 1px solid $clr-02;
+        border: 1px solid $clr-2;
         box-shadow: none;
         outline: none;
     }

@@ -1,8 +1,9 @@
-@import '../../../app/root';
+@import '@roots/ui';
+@import '@roots/resume';
 
 section.testimonials {
     background: $clr-2;
-    color: $clr-white;
+    color: $light-text-clr;
 
     .container {
         display: flex;

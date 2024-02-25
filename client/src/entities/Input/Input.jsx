@@ -15,6 +15,7 @@ function Input(props) {
 
     const handleInputChange = (e) => {
         setValue(e.target.value)
+        if(props.onChange) { props.onChange(e) }
     }
 
     useEffect(() => {

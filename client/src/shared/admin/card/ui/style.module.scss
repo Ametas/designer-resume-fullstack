@@ -1,4 +1,5 @@
-@import '../../../../pages/Admin/root';
+@import '@roots/ui';
+@import '@roots/admin';
 
 .card {
     background-color: $cl-2;
@@ -9,7 +10,7 @@
     .card-title {
         font-weight: 600;
         font-size: 16px;
-        color: $cl-black;
+        color: $dark-text-clr;
         display: flex;
         justify-content: space-between;
         gap: 20px;

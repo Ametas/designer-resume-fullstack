@@ -1,4 +1,5 @@
-@import '../../../app/root';
+@import '@roots/ui';
+@import '@roots/resume';
 
 .social-link {
     padding: 15px;
@@ -34,6 +35,6 @@
         opacity: 0;
         transition: left $t3, opacity $t3;
         z-index: -1;
-        color: $clr-white;
+        color: $light-text-clr;
     }
 }

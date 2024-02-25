@@ -1,28 +1,28 @@
-@import '../../../app/root';
+@import '@roots/ui';
 
 .button {
     padding: 15px 40px;
     border: 1px solid transparent;
-    border-radius: 8px;
+    border-radius: $border-radius * .5;
     font-weight: 700;
-    color: $clr-white;
+    color: $light-text-clr;
     font-size: 16px;
     letter-spacing: .1rem;
     cursor: pointer;
     transition: border-radius $t3;
 
     &.primary {
-        background: $clr-danger;
+        background: $primary-btn-bg;
     }
 
     &.secondary {
-        background: transparent;
+        background: $secondary-btn-bg;
         border-color: $clr-white;
     }
 
     &.tertiary {
-        background: $clr-01;
-        color: $clr-white;
+        background: $tertiary-btn-bg;
+        color: $light-text-clr;
     }
 
     &.xs {
@@ -32,6 +32,6 @@
     }
 
     &:hover {
-        border-radius: 24px;
+        border-radius: $border-radius;
     }
 }

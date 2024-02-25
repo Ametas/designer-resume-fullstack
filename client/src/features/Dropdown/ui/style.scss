@@ -1,4 +1,5 @@
-@import '../../../app/root';
+@import '@roots/ui';
+@import '@roots/order';
 
 .dropdown {
     position: absolute;
@@ -7,7 +8,7 @@
     transform: translateX(-45%);
     background: $clr-white;
     border-radius: 18px;
-    border: 2px solid $clr-02;
+    border: 2px solid $clr-2;
     display: flex;
     flex-direction: column;
     
@@ -34,7 +35,7 @@
         justify-content: center;
         padding: 10px 20px;
         font-size: 16px;
-        color: $text-color;
+        color: $dark-text-clr;
         border-radius: inherit;
         border: 1px solid transparent;
         font-weight: 500;
@@ -42,8 +43,8 @@
                     color $t3;
 
         &:hover {
-            color: $clr-white;
-            background: $clr-01;
+            color: $light-text-clr;
+            background: $clr-3;
         }
     }
 

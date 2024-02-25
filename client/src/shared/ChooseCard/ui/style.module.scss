@@ -1,8 +1,9 @@
-@import '../../../app/root';
+@import '@roots/ui';
+@import '@roots/order';
 
 .choose-card {
-    box-shadow: 0 0 20px $clr-02;
-    border-radius: 35px;
+    box-shadow: 0 0 20px $clr-2;
+    border-radius: $border-radius;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,8 +17,8 @@
                 box-shadow $t3;
 
     &:hover, &.active {
-        background: $clr-01;
-        color: $clr-white;
+        background: $clr-3;
+        color: $light-text-clr;
         box-shadow: none;
     }
 }

@@ -1,11 +1,12 @@
-@import '../../../app/root';
+@import '@roots/ui';
+@import '@roots/resume';
 
 .card {
     background: $clr-1;
     padding: 50px 40px;
     display: grid;
     gap: 20px;
-    border-radius: 16px;
+    border-radius: $border-radius;
     transition: scale $t3, box-shadow $t3;
 
     &:hover {
@@ -39,7 +40,7 @@
             transition: background $t3;
 
             * {
-                color: $clr-white;
+                color: $light-text-clr;
             }
             
             &:hover {
@@ -53,7 +54,7 @@
         }
 
         i.action-text {
-            border-radius: 16px;
+            border-radius: $border-radius;
             padding: 15px 0;
             opacity: 0;
             user-select: none;

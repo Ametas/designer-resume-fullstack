@@ -1,11 +1,12 @@
-@import '../../../app/root';
+@import '@roots/ui';
+@import '@roots/resume';
 
 .hero {
     height: 100%;
     display: grid;
     place-content: center;
     grid-template-columns: repeat(2, 1fr);
-    color: $clr-white;
+    color: $light-text-clr;
 
     .hero-text {
         .btns {

@@ -9,6 +9,7 @@
       "@pages/*": ["@/pages"],
       "@shared/*": ["@/shared"],
       "@widgets/*": ["@/widgets"],
+      "@roots/*": ["@/app/roots"]
     }
   }
 }

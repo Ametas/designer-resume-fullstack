@@ -1,8 +1,9 @@
-@import '../../../app/root';
+@import '@roots/ui';
+@import '@roots/resume';
 
 section.resume {
     background: $clr-1;
-    color: $clr-white;
+    color: $light-text-clr;
 
     .container {
         display: grid;
@@ -18,10 +19,6 @@ section.resume {
             align-items: start;
             justify-content: end;
             gap: 30px;
-
-            .section-title {
-                margin-bottom: 0;
-            }
 
             .tabs {
                 display: flex;

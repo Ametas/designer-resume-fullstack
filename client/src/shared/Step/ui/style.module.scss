@@ -1,9 +1,10 @@
-@import '../../../app/root';
+@import '@roots/ui';
+@import '@roots/order';
 
 .step {
     font-style: normal;
     font-size: 18px;
-    background: $clr-02;
+    background: $clr-2;
     font-weight: 700;
     width: 50px;
     aspect-ratio: 1;
@@ -18,7 +19,7 @@
                 background $t3;
 
     &.active {
-        background: $clr-01;
+        background: $clr-3;
         color: $clr-white;
     }
 
@@ -28,15 +29,15 @@
     }
 
     &:hover {
-        background: $clr-02;
-        color: $text-color;
+        background: $clr-2;
+        color: $dark-text-clr;
     }
 }
 
 .line {
     height: 8px;
     width: clamp(10px, 3vw, 150px);
-    background: $clr-02;
+    background: $clr-2;
     border-radius: 50px;
     transition: color $t3, 
     background $t3;

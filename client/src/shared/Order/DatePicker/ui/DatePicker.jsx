@@ -6,8 +6,13 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs from 'dayjs';
 import ru from 'dayjs/locale/ru'
 
-export const DatePicker = () => {
+export const DatePicker = (props) => {
   const [value, setValue] = useState(dayjs())
+
+  const handleChange = (newValue) => {
+    setValue(dayjs(newValue))
+    props.onChange(newValue)
+  }
 
   return (
     <LocalizationProvider 
@@ -16,7 +21,7 @@ export const DatePicker = () => {
     >
       <DateCalendar
         value={value}
-        onChange={(newValue) => {setValue(dayjs(newValue))}}
+        onChange={(newValue) => {handleChange(newValue)}}
       />
     </LocalizationProvider>
   )

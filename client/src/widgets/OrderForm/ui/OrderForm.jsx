@@ -16,58 +16,105 @@ import { BudgetAndDate } from '@features/BudgetAndDate';
 import { FormBtn } from '@shared/FormBtn'
 import Container from '@shared/Container/Container';
 
+const steps = [
+  {
+    component: PersonalData,
+    title: 'PersonalData',
+  },
+  {
+    component: ObjectDetails,
+    title: 'ObjectDetails',
+  },
+  {
+    component: PlacementType,
+    title: 'PlacementType',
+  },
+  {
+    component: SpecialRequirements,
+    title: 'SpecialRequirements',
+  },
+  {
+    component: Preferences, //FIX
+    title: 'Preferences',
+  },  
+  {
+    component: BudgetAndDate,
+    title: 'BudgetAndDate',
+  },
+  { 
+    component: Commentaries,
+    title: 'Commentaries',
+  },
+  {
+    component: OrderSending,
+    title: 'OrderSending',
+  },
+
+]
+
 export const OrderForm = () => {
-  const stepCount = 7;
+  const stepCount = steps.length - 1;
 
   const [activeStep, setActiveStep] = useState(0)
   const [formData, setFormData] = useState({})
 
-  const nextStep = () => { setActiveStep((prev) => Math.min(stepCount, prev + 1)) }
-  const prevStep = () => { setActiveStep((prev) => Math.max(0, prev - 1)) }
+  const nextStep = (e) => {
+    e.preventDefault()
+    setActiveStep((prev) => Math.min(stepCount, prev + 1)) 
+  }
+  const prevStep = (e) => {
+    e.preventDefault()
+    setActiveStep((prev) => Math.max(0, prev - 1)) 
+  }
   
   const handleStepClick = (clickedStep) => { setActiveStep(clickedStep) }
 
+  const handleFormDataChange = (step, data) => {
+    setFormData((prev) => ({ ...prev, [step]: data }))
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
+
     console.log(formData)
   }
 
   return (
     <section className={`order`}>
       <Container>
-        <div className="form-wrapper">
-          <StepIndicator 
-            isHide={activeStep === 7} 
-            stepCount={stepCount} 
-            step={activeStep} 
-            onStepClick={handleStepClick}
-          />
-          <form action=""
-            onSubmit={activeStep === stepCount - 1 ? handleSubmit : nextStep}
-          >
-            <PersonalData isActive={activeStep === 0} />
-            <ObjectDetails isActive={activeStep === 1} />
-            <PlacementType isActive={activeStep === 2} />
-            <SpecialRequirements isActive={activeStep === 3} />
-            <Preferences isActive={activeStep === 4} />
-            <BudgetAndDate isActive={activeStep === 5} />
-            <Commentaries isActive={activeStep === 6} />
-            <OrderSending isActive={activeStep === 7} />
+          <form onSubmit={handleSubmit}>
+            <StepIndicator
+              stepCount={stepCount}
+              step={activeStep}
+              onStepClick={handleStepClick}
+            />
+              <div className="form-steps">
+                {steps.map((item, index) => {
+                  return <item.component 
+                  key={index} isActive={activeStep === index} 
+                  onUpdate={(data) => {handleFormDataChange(item.title, data)}} />
+                })}
+                {console.log(formData)}
+              </div>
+              <div className="btns">
+                <FormBtn 
+                  isHide={activeStep === 0 || activeStep === stepCount} 
+                  btnText="Назад" 
+                  onClick={prevStep} 
+                />
+                <FormBtn 
+                  isHide={activeStep === stepCount - 1 || activeStep === stepCount} 
+                  btnText={'Далее'} 
+                  onClick={nextStep} 
+                />
+                <FormBtn 
+                  isHide={activeStep < stepCount - 1 || activeStep === stepCount} 
+                  btnText={'Отправить заявку'} 
+                  type="submit"
+                  onClick={nextStep} 
+                />
+              </div>
           </form>
-        </div>
-        <div className="btns">
-          <FormBtn 
-            isHide={activeStep === 0 || activeStep === stepCount} 
-            btnText="Назад" 
-            onClick={prevStep} 
-          />
-          <FormBtn 
-            isHide={activeStep === stepCount} 
-            btnText={activeStep < stepCount - 1 ? 'Далее' : 'Отправить заявку'} 
-            type='submit'
-            onClick={nextStep} 
-          />
-        </div>
       </Container>
     </section>
   )

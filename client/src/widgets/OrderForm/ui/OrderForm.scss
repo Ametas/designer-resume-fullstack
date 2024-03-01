@@ -13,23 +13,25 @@ section.order {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 1000px;
+        max-width: 1000px;
+        width: 100%;
         gap: 30px;
         z-index: 1;
 
-        .form-wrapper {
+        form {
             width: 100%;
-            height: 600px;
+            height: 700px;
             background: $clr-white;
             border-radius: 35px;
             box-shadow: 0 0 100px $clr-2;
             padding: 50px;
             display: flex;
             flex-direction: column;
+            gap: 20px;
 
-            form {
-                flex: 1;
+            .form-steps {
                 position: relative;
+                flex: 1;
 
                 & > * {
                     display: flex;
@@ -38,8 +40,6 @@ section.order {
                     height: 100%;
                     position: absolute;
                     width: 100%;
-                    padding-top: 20px;
-                    top: 0;
                     transition: top $t3,
                                 scale $t5;
                     opacity: 1;
@@ -53,13 +53,15 @@ section.order {
                     }
                 }
             }
+
+
         }
 
         .btns {
             display: flex;
-            justify-content: space-evenly;
-            width: 70%;
+            width: 100%;
             gap: 60px;
+            z-index: 2;
             & > * {
                 flex: 1;
             }

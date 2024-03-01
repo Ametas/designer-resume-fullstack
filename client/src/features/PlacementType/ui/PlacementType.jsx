@@ -12,9 +12,12 @@ export const PlacementType = (props) => {
       { id: 'another', text: 'Другое помещение (уточняется индивидуально)'}
   ]
 
-  const [selectedCard, setSelectedCard] = useState(cards[0].id)
+  const [selectedCard, setSelectedCard] = useState('')
 
-  const handleCardClick = (cardId) => { setSelectedCard(cardId) }
+  const handleCardClick = (card) => { 
+    setSelectedCard(card) 
+    props.onUpdate(selectedCard)
+  }
 
   return (
     <div className={`${style['placement-type']} ${!props.isActive && 'inactive'}`}>
@@ -26,8 +29,8 @@ export const PlacementType = (props) => {
             key={card.id}
             id={card.id}
             text={card.text}
-            isActive={selectedCard === card.id}
-            onClick={() => handleCardClick(card.id)}
+            isActive={selectedCard.id === card.id}
+            onClick={() => handleCardClick(card)}
           />
         ))}
       </div>

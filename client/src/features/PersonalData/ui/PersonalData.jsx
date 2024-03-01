@@ -6,12 +6,12 @@ import { FormTitle } from '@shared/FormTitle';
 import { FormSubTitle}  from '@shared/FormSubTitle';
 
 export const PersonalData = (props) => {
-  const [values, setValues] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    address: '',
-  })
+  const [values, setValues] = useState({})
+
+  const handleChange = (e, field) => {
+    setValues({ ...values, [field]: e.target.value })
+    props.onUpdate(values)
+  }
 
   return (
   <div className={`${style['personal-data']} ${!props.isActive && 'inactive'}`}>
@@ -22,26 +22,26 @@ export const PersonalData = (props) => {
         id="name" 
         label="ФИО" 
         placeholder="Ваше ФИО"
-        onChange={(e) => setValues({ ...values, name: e.target.value })}
+        onChange={(e) => handleChange(e, 'name')}
       />
       <Input 
         id="email" 
         label="Электронная почта" 
         placeholder="Ваш E-Mail" 
-        onChange={(e) => setValues({ ...values, email: e.target.value })}
+        onChange={(e) => handleChange(e, 'email')}
       />
       <Input 
         id="phone"
         type="tel"
         label="Номер телефона" 
         placeholder="+7 000 000-00-00"
-        onChange={(e) => setValues({ ...values, phone: e.target.value })}
+        onChange={(e) => handleChange(e, 'phone')}
       />
       <Input 
         id="address"
         label="Адрес объекта" 
         placeholder="Введите адрес объекта" 
-        onChange={(e) => setValues({ ...values, address: e.target.value })}
+        onChange={(e) => handleChange(e, 'address')}
       />
     </div>
   </div>

@@ -18,7 +18,6 @@ export const OrderSending = (props) => {
       <ChooseCard
         id="skip-examples"
         text="Пропустить"
-        isActive={true}
       />
     </div>
   </div>

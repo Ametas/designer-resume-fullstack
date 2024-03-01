@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './style.module.scss'
 
 import { FormTitle } from '@shared/FormTitle';
@@ -31,6 +31,13 @@ const inputs = [
 ]
 
 export const Preferences = (props) => {
+  const [values, setValues] = useState({})
+
+  const handleChange = (e, field) => {
+    setValues({ ...values, [field]: e.target.value })
+    props.onUpdate(values)
+  }
+
   return (
     <div className={`${style['preferences']} ${!props.isActive && 'inactive'}`}>
       <FormTitle>Ваши пожелания и предпочтения</FormTitle>
@@ -42,6 +49,8 @@ export const Preferences = (props) => {
             placeholder={input.placeholder}
             label={input.label}
             autoComplete={input.autoComplete}
+            onChange={(e) => handleChange(e, input.id)}
+            //TODO FIX ONCHANGE WITH AUTOCOMPLETE
           />
         ))}
       </div>

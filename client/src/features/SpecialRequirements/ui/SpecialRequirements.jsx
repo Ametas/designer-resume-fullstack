@@ -11,9 +11,12 @@ export const SpecialRequirements = (props) => {
     { id: 'for-another', text: 'Другое (уточняется индивидуально)'}
   ]
 
-  const [selectedCard, setSelectedCard] = useState(cards[0].id)
+  const [selectedCard, setSelectedCard] = useState('')
 
-  const handleCardClick = (cardId) => { setSelectedCard(cardId) }
+  const handleCardClick = (card) => { 
+    setSelectedCard(card) 
+    props.onUpdate(selectedCard)
+  }
 
   return (
     <div className={`${style['special-requierements']} ${!props.isActive && 'inactive'}`}>
@@ -24,8 +27,8 @@ export const SpecialRequirements = (props) => {
             key={card.id}
             id={card.id}
             text={card.text}
-            isActive={selectedCard === card.id}
-            onClick={() => handleCardClick(card.id)}
+            isActive={selectedCard.id === card.id}
+            onClick={() => handleCardClick(card)}
           />
         ))}
       </div>

@@ -1,4 +1,5 @@
 @import '@roots/ui';
+@import '@roots/admin';
 
 .button {
     padding: 15px 40px;
@@ -10,6 +11,7 @@
     letter-spacing: .1rem;
     cursor: pointer;
     transition: border-radius $t3;
+
 
     &.primary {
         background: $primary-btn-bg;
@@ -25,11 +27,36 @@
         color: $light-text-clr;
     }
 
+    &.square {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+
     &.xs {
         padding: 5px 10px;
         font-size: 15px;
         letter-spacing: 2px;
+
+        &-square {
+            padding: 10px;
+        }
     }
+
+    &.completed {
+        @include state-colors($completed-clr);
+    }
+    &.in-progress {
+        @include state-colors($in-progress-clr);
+    }
+    &.on-holding {
+        @include state-colors($on-holding-clr);
+    }
+    &.rejected {
+        @include state-colors($rejected-clr);
+    }
+
 
     &:hover {
         border-radius: $border-radius;

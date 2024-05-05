@@ -23,7 +23,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            color: $dark-text-clr;
+            color: $light-text-clr;
             transition: color $s3 ease;
 
             svg.chevron {
@@ -45,10 +45,11 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            border: 1px solid $cl-neutral;
+            border: 1px solid transparent;
             padding: 0 15px;
             border-radius: 20px;
             background: $cl-1;
+            color: $light-text-clr;
             font-size: 20px;
             transition: border-color $s3 ease, 
                         color $s3 ease;
@@ -56,6 +57,7 @@
             input {
                 border: none;
                 background: inherit;
+                color: $light-text-clr;
                 padding: 10px 10px;
 
                 &::placeholder {
@@ -81,6 +83,8 @@
             flex-direction: column;
             text-align: right;
             letter-spacing: .5px;
+            color: $light-text-clr;
+
             .name {
                 font-weight: 700;
                 font-size: 18px;

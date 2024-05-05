@@ -3,7 +3,9 @@
 
 .input {
   padding: 10px 15px;
-  border: 1px solid $cl-neutral;
+  border: none;
   border-radius: $border-radius;
+  background: $cl-1;
+  color: $light-text-clr;
   letter-spacing: .5px;
 }

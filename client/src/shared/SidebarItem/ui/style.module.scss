@@ -9,15 +9,15 @@
     align-items: center;
     font-weight: 600;
     letter-spacing: .5px;
-    border-radius: 8px;
+    border-radius: calc($border-radius / 2);
     cursor: pointer;
+    position: relative;
+    color: $light-text-clr;
     transition: background $s3 ease, 
-                color $s1 ease,
                 font-size $s3 ease;
 
     &:hover, &.active {
         background: $cl-3;
-        color: $cl-2;
     }
 
     svg {
@@ -25,16 +25,29 @@
         transition: transform $s3 ease;
     }
 
-    svg.chevron {
-        font-size: 10px;
-        margin-left: auto;
+    span.tooltip {
+        position: absolute;
+        height: 100%;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 70px;
+        background: $cl-3;
+        border-radius: inherit;
+        z-index: -100;
+        opacity: 0;
+        visibility: hidden;
+        user-select: none;
+        pointer-events: none;
+        transition: opacity $t1;
     }
 
-    &.hide {
-        font-size: 0;
-
-        svg {
-            transform: translateX(50%);
+    &:hover {
+        span.tooltip {
+            opacity: 1;
+            visibility: visible;
+            z-index: 1;
         }
     }
 }

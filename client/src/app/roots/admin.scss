@@ -1,9 +1,14 @@
-$cl-1: #F5F6FA;
-$cl-2: #FFFFFF;
+$cl--1: #F5F6FA;
+$cl--2: #FFFFFF;
 $cl-3: #4880FF;
 
-$cl-dark-1: #1B2431;
-$cl-dark-2: #273142;
+$cl-1: #1B2431;
+$cl-2: #273142;
 $cl-dark-3: #323D4E;
 
 $cl-neutral: #E0E0E0;
+
+$in-progress-clr: rgba(98, 38, 239);
+$completed-clr: rgba(0, 182, 155);
+$rejected-clr: rgba(239, 56, 38);
+$on-holding-clr: rgba(255, 167, 86);

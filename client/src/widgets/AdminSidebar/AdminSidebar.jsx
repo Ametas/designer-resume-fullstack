@@ -18,11 +18,11 @@ const sidebarItems = {
             text: 'Главная',
             icon: <AiOutlineHome />
         },
-        {
-            id: 1,
-            text: 'Анкета',
-            icon: <GoChecklist />
-        },
+        // {
+        //     id: 1,
+        //     text: 'Анкета',
+        //     icon: <GoChecklist />
+        // },
         {
             id: 2,
             text: 'Заявки',
@@ -69,7 +69,7 @@ const sidebarItems = {
 }
 
 function AdminSidebar(props) {
-    const [activeItem, setActiveItem] = useState(false)
+    const [activeItem, setActiveItem] = useState(0)
 
     const handleActiveItem = (id) => {
         setActiveItem(id)
@@ -77,7 +77,7 @@ function AdminSidebar(props) {
     }
 
     return (
-        <div className={`${style.sidebar} ${!props.isHide ? style.hidden : ""}`}>
+        <div className={`${style.sidebar}`}>
             <div className={style.logo}>
                 <IoLogoAmplify />
             </div>
@@ -86,13 +86,12 @@ function AdminSidebar(props) {
                     <SidebarItem 
                         key={item.id} 
                         {...item} 
-                        isHide={props.isHide} 
                         isActive={activeItem === item.id}
                         onClick={() => handleActiveItem(item.id)}
                     />
                 ))}
             </ul>
-            <ul className={style['sidebar-links']}>
+            {/* <ul className={style['sidebar-links']}>
                 <h2 className={style.title}>Resume</h2>
                 {sidebarItems.resume.map((item) => (
                     <SidebarItem 
@@ -103,12 +102,11 @@ function AdminSidebar(props) {
                         onClick={() => handleActiveItem(item.id)}
                     />
                 ))}
-            </ul>
-            <ul className={`${style['sidebar-links']}`}>
+            </ul> */}
+            <ul className={`${style['sidebar-links']} ${style.exit}`}>
                 <SidebarItem 
                     icon={<AiOutlinePoweroff />} 
                     text='Выход'
-                    isHide={props.isHide}
                 />
             </ul>
         </div>

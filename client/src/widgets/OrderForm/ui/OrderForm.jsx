@@ -75,8 +75,21 @@ export const OrderForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    setActiveStep((prev) => Math.min(stepCount, prev + 1)) 
 
     console.log(formData)
+    console.log(JSON.stringify(formData));
+
+    fetch('/api/order', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+      .then(res => res.json())
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
   }
 
   return (
@@ -94,7 +107,6 @@ export const OrderForm = () => {
                   key={index} isActive={activeStep === index} 
                   onUpdate={(data) => {handleFormDataChange(item.title, data)}} />
                 })}
-                {console.log(formData)}
               </div>
               <div className="btns">
                 <FormBtn 
@@ -111,7 +123,7 @@ export const OrderForm = () => {
                   isHide={activeStep < stepCount - 1 || activeStep === stepCount} 
                   btnText={'Отправить заявку'} 
                   type="submit"
-                  onClick={nextStep} 
+                  onClick={handleSubmit} 
                 />
               </div>
           </form>

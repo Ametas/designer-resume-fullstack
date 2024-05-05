@@ -18,7 +18,7 @@ db.resumeProperties.insert({
         },
         supTitle: 'Welcome to my Portfolio',
         title: "Hello, I‘m Johan Deo Professional Designer.",
-        paragraph: 'Conveniently customize proactive web services for leveraged without continualliery aggregate fricctionle ou wellies richard.',
+        paragraph: 'Conveniently customize proactive web services for leveraged without continualliery aggregate fricctionle ou wellies richard. alo0',
         btns: [
             {
                 btnText: 'Hire me',

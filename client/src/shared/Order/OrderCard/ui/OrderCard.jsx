@@ -3,26 +3,56 @@ import style from './style.module.scss'
 import { Status } from './../../Status';
 
 export const OrderCard = (props) => {
-  const { 
-    id,
-    name,
-    phone,
-    email,
-    address,
-    date,
-    price,
-    rooms,
-    square,
-    placementType,
-    specialRequests,
-    interiorStyle,
-    functionalRequests,
-    status,
-    comments, 
-  } = props.data
+  // if(!props.data) {
+  //   return <div>Данные не загружены</div>
+  // }
+  let id = props.data?._id
+
+  let clientName = props.data?.PersonalData.name
+  let phone = props.data?.PersonalData.phone
+  let email = props.data?.PersonalData.email
+  let address = props.data?.PersonalData.address
+
+  let date = props.data?.BudgetAndDate.date
+  let budget = props.data?.BudgetAndDate.budget
+
+  let rooms = props.data?.ObjectDetails.roomsCount
+  let square = props.data?.ObjectDetails.objectSquare
+
+  let placementType = props.data?.PlacementType.text
+
+  let specialRequests = props.data?.SpecialRequirements.text
+
+  let interiorStyle = props.data?.Preferences['interior-style']
+  let materials = props.data?.Preferences['materials-and-texture']
+  let colorScheme = props.data?.Preferences['color-scheme']
+
+  let functionalRequests
+
+  let comments = props.data?.Commentaries
+
+
+  // const { 
+  //   id, //
+  //   name, //
+  //   phone, //
+  //   email, //
+  //   address, //
+  //   date, //
+  //   price, //
+  //   rooms, //
+  //   square, //
+  //   placementType,
+  //   specialRequests,
+  //   interiorStyle,
+  //   functionalRequests,
+  //   status,
+  //   comments, 
+  // } = props.data
 
   return (
     <div className={style.card}>
+      {console.log(props.data)}
       <div className={style.info}>
         <div className={style['client-info']}>
           <div className={style.header}>
@@ -30,9 +60,15 @@ export const OrderCard = (props) => {
               {id}
               <i>ID</i>
             </span>
+          </div>
+          <div>
             <span className={style.name}>
-              {name}
+              {clientName}
               <i>ФИО</i>
+            </span>
+            <span className={style.date}>
+              {date}
+              <i>Дата</i>
             </span>
           </div>
           <div className={style.contacts}>
@@ -49,14 +85,18 @@ export const OrderCard = (props) => {
             {address}
             <i>Адрес</i>
           </span>
-          <div className={style['date-and-price']}>
-            <span className={style.date}>
-              {date}
-              <i>Дата</i>
+          <div className={style.budget}>
+            <span className={style.price}>
+              {budget.recommended}
+              <i>Мин. бюджет</i>
             </span>
             <span className={style.price}>
-              {price}
-              <i>Бюджет</i>
+              {budget.recommended}
+              <i>Рек. бюджет</i>
+            </span>
+            <span className={style.price}>
+              {budget.recommended}
+              <i>Макс. бюджет</i>
             </span>
           </div>
         </div>
@@ -82,14 +122,18 @@ export const OrderCard = (props) => {
             <i>Стиль интерьера</i>
           </span>
           <span>
-            {functionalRequests}
-            <i>Функциональные т-я</i>
+            {interiorStyle}
+            <i>Стиль интерьера</i>
+          </span>
+          <span>
+            {interiorStyle}
+            <i>Стиль интерьера</i>
           </span>
         </div>
       </div>
       <div className={style.details}>
         <span className={style.status}>
-          <Status status={status} />
+          <Status status={props.orderStatus} />
         </span>
         <span className={style.comments}>{comments}</span>
       </div>

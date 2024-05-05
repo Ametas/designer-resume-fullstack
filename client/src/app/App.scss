@@ -16,11 +16,5 @@ html, body {
     }
 }
 
-body {
-    #root > * {
-        height: 100dvh;
-    }
-}
-
 a { text-decoration: none; }
 input { &:focus { outline: none; } }

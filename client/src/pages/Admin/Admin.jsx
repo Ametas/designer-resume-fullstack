@@ -6,7 +6,6 @@ import AdminMain from '@widgets/AdminMain/AdminMain'
 import AdminSidebar from '@widgets/AdminSidebar/AdminSidebar'
 
 function Admin() {
-  const [sidebar, setSidebar] = useState(true)
   const [activeTab, setActiveTab] = useState(0)
 
   const handleActiveTab = (id) => {
@@ -15,7 +14,7 @@ function Admin() {
   
   return (
     <div className={style.admin}>
-      <AdminSidebar isHide={sidebar} onActiveTab={handleActiveTab} />
+      <AdminSidebar onActiveTab={handleActiveTab} />
       <div className={style["content-wrapper"]}>
         <AdminHeader onClick={() => setSidebar(!sidebar)} />
         <AdminMain activeTab={activeTab} />

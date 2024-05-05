@@ -1,6 +1,10 @@
+@import '@roots/admin';
+
 .admin {
     display: flex;
     width: 100%;
+    background: $cl-2;
+    min-height: 100dvh;
 
     .content-wrapper {
         display: flex;

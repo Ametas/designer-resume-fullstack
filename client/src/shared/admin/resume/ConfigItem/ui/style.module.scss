@@ -15,10 +15,6 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-  }
-
-  &.dark {
-    background: $cl-dark-2;
-    color: $cl-2;
+    color: $light-text-clr;
   }
 }

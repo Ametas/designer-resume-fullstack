@@ -7,7 +7,8 @@ export const Button = (props) => {
             className={
                 style.button + ' ' 
                 + style[props.variable] + ' '
-                + style[props.size]
+                + style[props.size] + ' '
+                + style[props.status]
             }
             onClick={props.onClick}
         >

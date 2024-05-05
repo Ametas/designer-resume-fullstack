@@ -5,12 +5,13 @@
     display: flex;
     gap: 10px;
     padding: 10px;
+    color: $light-text-clr;
 
     span {
         flex: 1;
-        padding: 25px;
+        padding: 20px 25px;
         border-radius: calc($border-radius * .5);
-        box-shadow: 0 0 5px $cl-neutral;
+        box-shadow: 0 0 5px $cl-1;
         position: relative;
         font-weight: 700;
         letter-spacing: .8px;
@@ -20,7 +21,7 @@
             right: 10px;
             bottom: 5px;
             font-style: normal;
-            font-size: 12px;
+            font-size: 10px;
             color: #ccc;
         }
     }
@@ -35,17 +36,15 @@
         .client-info {
             display: flex;
             flex-direction: column;
-            
-            .header {
-                span.id {
-                    flex: 0;
-                }
-            }
         }
 
         .placement-info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            flex-flow: row wrap;
+
+            span {
+                min-width: 40%;
+            }
         }
 
         .client-info, 
@@ -55,6 +54,20 @@
             & > div {
                 display: flex;
                 gap: 10px;
+            }
+        }
+
+        .budget {
+            display: flex;
+            gap: 10px;
+
+            span {
+                flex: 1;
+                transition: flex $t3;
+
+                &:hover {
+                    flex: 3;
+                }
             }
         }
     }
@@ -73,6 +86,9 @@
         }
         .comments {
             text-indent: 1rem;
+            width: 100%;
+            word-break: break-all;
+            word-wrap: break-word;
         }
     }
 }

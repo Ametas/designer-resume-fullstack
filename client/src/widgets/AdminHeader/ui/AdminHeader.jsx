@@ -10,10 +10,6 @@ export const AdminHeader = (props) => {
     return (
         <div className={style.header}>
             <div className={style.tools}>
-                <div className={style["sidebar-toggle"]} onClick={props.onClick}>
-                    <FaChevronLeft className={style.chevron} />
-                    <MdOutlineMenu />
-                </div>
                 <div className={style.search}>
                     <GoSearch />
                     <input type="search" placeholder='Поиск' />

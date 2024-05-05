@@ -10,13 +10,11 @@ export const SidebarItem = (props) => {
       className={`
           ${style[`sidebar-item`]}
           ${props.isActive && style.active}
-          ${!props.isHide ? style.hide : ""}
       `}
       onClick={props.onClick}
     >
       {props.icon || <AiOutlineHome />}
-      {props.text}
-      {<FaChevronRight className={style.chevron} />}
+      <span className={style.tooltip}>{props.text}</span>
     </li>
   )
 }

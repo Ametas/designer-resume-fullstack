@@ -15,6 +15,7 @@
         font-weight: 700;
         font-size: 24px;
         transition: all $s3 ease;
+        color: $light-text-clr;
 
         span {
             color: $cl-3;
@@ -26,31 +27,27 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 20px;
-        transition: padding $s3 ease;
+        padding: 5px;
+        gap: 5px;
+        flex: 1;
     
         &:not(:last-child) {
-            border-bottom: 1px solid $cl-neutral;
+            border-bottom: 1px solid $cl-dark-3;
         }
     
-        .title {
-            margin-left: 15px;
-            margin-bottom: 15px;
-            font-size: 14px;
-            font-weight: 700;
-            opacity: 0.5;
-            text-transform: uppercase;
-            letter-spacing: .5px;
-        }
-    }
+        // .title {
+        //     margin-left: 15px;
+        //     margin-bottom: 15px;
+        //     font-size: 14px;
+        //     font-weight: 700;
+        //     opacity: 0.5;
+        //     text-transform: uppercase;
+        //     letter-spacing: .5px;
+        //     color: $light-text-clr;
+        // }
 
-    &.hidden {
-        .title {
-            display: none;
-        }
-
-        .sidebar-links {
-            padding: 5px;
+        &.exit {
+            flex: 0;
         }
     }
 }

@@ -1,6 +1,15 @@
+@import '@roots/admin';
+@import '@roots/ui';
+
 .modal {
+    .modal-title,
+    .modal-actions {
+        color: $light-text-clr;
+        background: $cl-1;
+    }
     .modal-content {
         scrollbar-width: none;
+        background: $cl-2;
         &::-webkit-scrollbar {
             display: none;
         }

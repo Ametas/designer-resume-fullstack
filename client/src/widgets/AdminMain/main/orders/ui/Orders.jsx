@@ -1,118 +1,136 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import style from './style.module.scss'
+
+import axios from 'axios'
+
 import { AdminTitle } from '../../../../../shared/titles/AdminTitle'
 import { OrderList } from '../../../../../shared/Order/OrderList'
 import { Modal } from '../../../../../shared/modal'
 import { OrderCard } from '../../../../../shared/Order/OrderCard'
 import { Button } from '@shared/Button'
-import { FaRegHeart } from "react-icons/fa6";
-
-
-const orderList = [
-    {
-        id: 1,
-        name: 'Иванов Иван Иваночик',
-        phone: '79000000000',
-        email: 'Email@eee.ru',
-        address: 'Улица дададададаад',
-        date: '24.02.1222',
-        price: 2000,
-        rooms: 4,
-        square: 42,
-        placementType: 'Дом',
-        specialRequests: 'Для детей',
-        interiorStyle: 'Классический',
-        functionalRequests: 'Игровая комната',
-        status: 'in-progress',
-        comments: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga atque quaerat sequi blanditiis debitis, doloremque nam, accusamus, esse voluptate odit aliquam natus dolorum. Cumque, vel ab. Possimus sed numquam dolorum?
-        Placeat odit alias voluptates modi cupiditate pariatur harum autem, officiis cum earum architecto libero similique ullam incidunt recusandae debitis ad. Totam, quis ex. Provident adipisci quam facilis hic obcaecati et?`
-    },
-    {
-        id: 2,
-        name: 'Иванов Иван Иваночик',
-        phone: '79000000000',
-        email: 'Email@eee.ru',
-        address: 'Улица дададададаад',
-        date: '24.02.1222',
-        price: 2000,
-        rooms: 4,
-        square: 42,
-        placementType: 'Дом',
-        specialRequests: 'Для детей',
-        interiorStyle: 'Классический',
-        functionalRequests: 'Игровая комната',
-        status: 'completed',
-        comments: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga atque quaerat sequi blanditiis debitis, doloremque nam, accusamus, esse voluptate odit aliquam natus dolorum. Cumque, vel ab. Possimus sed numquam dolorum?
-        Placeat odit alias voluptates modi cupiditate pariatur harum autem, officiis cum earum architecto libero similique ullam incidunt recusandae debitis ad. Totam, quis ex. Provident adipisci quam facilis hic obcaecati et?`
-    },
-    {
-        id: 3,
-        name: 'Иванов Иван Иваночик',
-        phone: '79000000000',
-        email: 'Email@eee.ru',
-        address: 'Улица дададададаад',
-        date: '24.02.1222',
-        price: 2000,
-        rooms: 4,
-        square: 42,
-        placementType: 'Дом',
-        specialRequests: 'Для детей',
-        interiorStyle: 'Классический',
-        functionalRequests: 'Игровая комната',
-        status: 'on-holding',
-        comments: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga atque quaerat sequi blanditiis debitis, doloremque nam, accusamus, esse voluptate odit aliquam natus dolorum. Cumque, vel ab. Possimus sed numquam dolorum?
-        Placeat odit alias voluptates modi cupiditate pariatur harum autem, officiis cum earum architecto libero similique ullam incidunt recusandae debitis ad. Totam, quis ex. Provident adipisci quam facilis hic obcaecati et?`
-    },
-    {
-        id: 4,
-        name: 'Иванов Иван Иваночик',
-        phone: '79000000000',
-        email: 'Email@eee.ru',
-        address: 'Улица дададададаад',
-        date: '24.02.1222',
-        price: 2000,
-        rooms: 4,
-        square: 42,
-        placementType: 'Дом',
-        specialRequests: 'Для детей',
-        interiorStyle: 'Классический',
-        functionalRequests: 'Игровая комната',
-        status: 'rejected',
-        comments: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga atque quaerat sequi blanditiis debitis, doloremque nam, accusamus, esse voluptate odit aliquam natus dolorum. Cumque, vel ab. Possimus sed numquam dolorum?
-        Placeat odit alias voluptates modi cupiditate pariatur harum autem, officiis cum earum architecto libero similique ullam incidunt recusandae debitis ad. Totam, quis ex. Provident adipisci quam facilis hic obcaecati et?`
-    },
-]
+import { FaRegHeart, FaHeart } from "react-icons/fa6";
 
 export const Orders = () => {
     const [modal, setModal] = useState(false)
     const [activeOrder, setActiveOrder] = useState(null)
+    const [orderList, setOrderList] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
+    const [isFavourite, setIsFavourite] = useState(false)
+    const [orderStatus, setOrderStatus] = useState(orderList[activeOrder]?.status || '')
+
+    useEffect(() => {
+      setIsLoading(true)
+
+      fetch('/api/getOrders')
+        .then(res => res.json())
+        .then(res => {
+          setOrderList(res)
+          setIsLoading(false)
+        })
+        .catch(error => {
+          console.log(error)
+          setIsLoading(false)
+        })
+    }, [])
+
+    useEffect(() => {
+      if (activeOrder !== null) {
+        setIsFavourite(orderList[activeOrder].isFavourite || false)
+        setOrderStatus(orderList[activeOrder].status || '')
+      }
+    }, [activeOrder, orderList])
+
 
     const handleOrderClick = (id) => {
-        console.log(id)
-        setActiveOrder(id)
+        const orderIndex = orderList.findIndex(order => order._id === id)
+        console.log('Индекс: ', orderIndex)
+        setActiveOrder(orderIndex)
         setModal(true)
     }
 
     const handleModalClose = () => { setModal(false) }
 
+    const toggleFavourite = async () => {
+      try {
+        await axios.patch(`/api/orders/${orderList[activeOrder]._id}`, { isFavourite: !isFavourite })
+        setIsFavourite(!isFavourite)
+      } catch (error) {
+        console.error('Error in toggleFavourite:', error);
+      }
+    }
+
+    const updateOrderStatus = async (newStatus) => {
+      try {
+        await axios.patch(`/api/orderStatus/${orderList[activeOrder]._id}`, { status: newStatus })
+        setOrderStatus(newStatus)
+      } catch (error) {
+        console.error('Error in updateOrderStatus:', error);
+      }
+    }
+
     return (
-    <div className={style.orders}>
+      <div className={style.orders}>
         <AdminTitle>Заказы</AdminTitle>
-        <OrderList onClick={handleOrderClick} data={orderList} />
-        <Modal 
-            onClose={handleModalClose}
-            title={'Заказ #' + activeOrder}
-            open={modal}
-            additionalActions={
-                Button({
-                    text: <FaRegHeart />,
-                    variable: 'tertiary',
-                    onClick: handleModalClose
-                })
-            }
-        >
-            <OrderCard data={orderList[activeOrder - 1]} />
-        </Modal>
-    </div>
+        <OrderList 
+          onClick={handleOrderClick} 
+          data={orderList} 
+          orderStatus={orderStatus}
+        />
+        {modal && (
+        <Modal
+          key={activeOrder}
+          onClose={handleModalClose}
+          title={'Заказ #' + activeOrder}
+          open={modal}
+          additionalActions={[
+            <Button
+              variable="tertiary"
+              onClick={() => updateOrderStatus('completed')}
+              status='completed'
+            >
+              Завершен
+            </Button>,
+            <Button
+              variable="tertiary"
+              onClick={() => updateOrderStatus('in-progress')}
+              status='in-progress'
+            >
+              В процессе
+            </Button>,
+            <Button
+              variable="tertiary"
+              onClick={() => updateOrderStatus('on-holding')}
+              status='on-holding'
+            >
+              В ожидании
+            </Button>,
+            <Button
+              variable="tertiary"
+              onClick={() => updateOrderStatus('rejected')}
+              status='rejected'
+            >
+              Отклонен
+            </Button>,
+            <Button
+              variable={'tertiary'}
+              onClick={toggleFavourite}
+              size={'square'}
+            >
+              {isFavourite ? <FaHeart /> : <FaRegHeart />}
+            </Button>,
+          ]}
+          >
+            {isLoading ? (
+              <div>Загрузка...</div>
+            ) : (
+              <OrderCard 
+                key={activeOrder} 
+                data={orderList[activeOrder]} 
+                orderStatus={orderStatus}
+              />
+            )}
+          </Modal>
+        )}
+      </div>
     )
 }

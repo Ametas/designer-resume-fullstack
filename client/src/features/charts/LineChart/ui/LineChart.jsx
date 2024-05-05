@@ -27,25 +27,50 @@ const options = {
   plugins: {
     legend: {
       position: 'bottom',
+      labels: {
+        color: 'white'
+      }
     },
+    tooltip: {
+      bodyColor: 'white'
+    }
   },
-};
-
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-
-
-const data = {
-  labels,
-  datasets: [
-    {
-      label: 'Dataset 1',
-      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      borderColor: 'rgb(255, 99, 132)',
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+  scales: {
+    x: {
+      ticks: {
+        color: 'white' // Цвет меток по горизонтальной оси
+      },
+      grid: {
+        color: 'rgba(255,255,255,.3)'
+      }
     },
-  ],
+    y: {
+      ticks: {
+        color: 'white' // Цвет меток по вертикальной оси
+      },
+      grid: {
+        color: 'rgba(255,255,255,.3)'
+      }
+    }
+  }
 };
 
-export const LineChart = () => {
+const defaultLabels = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июль', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+
+export const LineChart = (props) => {
+  const labels = props.labels || defaultLabels
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: props.label || 'Dataset',
+        data: props.data
+          ? props.data.map((value) => value)
+          : labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+        borderColor: 'rgb(255, 255, 255)',
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+      },
+    ],
+  };
   return <Line data={data} options={options} />;
 };

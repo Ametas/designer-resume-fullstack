@@ -1,0 +1,588 @@
+[{
+  "_id": {
+    "$oid": "6636582fe9affee5c7f4cf03"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "completed",
+  "orderDate": "2024-05-04",
+  "isFavourite": null
+},
+{
+  "_id": {
+    "$oid": "6636583de9affee5c7f4cf04"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "rejected",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "6636583ee9affee5c7f4cf05"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "6636583fe9affee5c7f4cf06"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "66365840e9affee5c7f4cf07"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "66365842e9affee5c7f4cf08"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "66365843e9affee5c7f4cf09"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "66365844e9affee5c7f4cf0a"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "completed",
+  "orderDate": "2024-05-04",
+  "isFavourite": true
+},
+{
+  "_id": {
+    "$oid": "663658771943c880c94697da"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "663658771943c880c94697dd"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "663658771943c880c94697de"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "663658771943c880c94697df"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "663658771943c880c94697db"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+},
+{
+  "_id": {
+    "$oid": "663658771943c880c94697dc"
+  },
+  "PersonalData": {
+    "name": "hsajdnsajkdsa",
+    "email": "asdklsajdlksad",
+    "phone": "akdljasldjkasdjsad",
+    "address": "aksjdaksldjklasdkal"
+  },
+  "ObjectDetails": {
+    "objectSquare": "asdasdasdas",
+    "roomsCount": "dasdasdasd",
+    "lightPreferences": "asdasdasd"
+  },
+  "PlacementType": {
+    "id": "another",
+    "text": "Другое помещение (уточняется индивидуально)"
+  },
+  "SpecialRequirements": {
+    "id": "for-childs",
+    "text": "Для детей"
+  },
+  "Preferences": {
+    "interior-style": "asdasda",
+    "materials-and-texture": "sdsad",
+    "color-scheme": "Яркие цвета",
+    "functional-requirements": "asdas"
+  },
+  "BudgetAndDate": {
+    "budget": {
+      "min": "13333",
+      "recommended": "133333",
+      "max": "41414"
+    },
+    "date": "16.5.2024"
+  },
+  "Commentaries": "sdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdfsdfsfsdfsdf",
+  "status": "on-holding",
+  "orderDate": "2024-05-04",
+  "isFavourite": false
+}]

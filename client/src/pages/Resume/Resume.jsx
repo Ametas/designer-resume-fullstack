@@ -7,18 +7,15 @@ import { Header } from '@widgets/Header';
 import { Services } from '@widgets/Services';
 import { Testimonial } from '@widgets/Testimonial';
 
-
-function ResumePage() {
-    return (
-        <>
-            <Header />
-            <About />
-            <Portfolio />
-            <Services />
-            <Resume />
-            <Testimonial />
-        </>
-    )
+export const ResumePage = () => {
+  return (
+    <>
+      <Header />
+      <About />
+      <Portfolio />
+      <Services />
+      <Resume />
+      <Testimonial />
+    </>
+  )
 }
-
-export default ResumePage

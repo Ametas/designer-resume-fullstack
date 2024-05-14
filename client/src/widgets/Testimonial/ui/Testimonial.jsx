@@ -16,7 +16,7 @@ export const Testimonial = () => {
   }, [])
 
   return (
-    <section className='testimonials'>
+    <section id='testimonials' className='testimonials'>
       <Container>
         <SectionTitle>Testimonial</SectionTitle>
         <Title>What Our Client Say About Us</Title>

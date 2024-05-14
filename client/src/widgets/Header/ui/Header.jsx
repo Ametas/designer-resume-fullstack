@@ -19,7 +19,7 @@ export const Header = () => {
     }, [])
 
     return (
-        <header className='header'>
+        <header id='header' className='header'>
             <Container>
                 <Navbar />
                 <Hero data={headerProps} />

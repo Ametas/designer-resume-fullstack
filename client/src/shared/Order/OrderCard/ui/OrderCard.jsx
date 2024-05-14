@@ -31,6 +31,8 @@ export const OrderCard = (props) => {
 
   let comments = props.data?.Commentaries
 
+  let status = props.data?.status
+
 
   // const { 
   //   id, //
@@ -133,7 +135,7 @@ export const OrderCard = (props) => {
       </div>
       <div className={style.details}>
         <span className={style.status}>
-          <Status status={props.orderStatus} />
+          <Status status={status} />
         </span>
         <span className={style.comments}>{comments}</span>
       </div>

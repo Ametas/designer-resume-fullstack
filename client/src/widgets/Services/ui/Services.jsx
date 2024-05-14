@@ -19,7 +19,7 @@ export const Services = () => {
   }, [])
 
   return (
-    <section className='services'>
+    <section id='services' className='services'>
       <Container>
         <SectionTitle>Why Choose Us</SectionTitle>
         <Title>Our Work Services</Title>

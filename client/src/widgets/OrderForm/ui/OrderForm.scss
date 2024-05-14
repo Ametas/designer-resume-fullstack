@@ -7,6 +7,7 @@ section.order {
     z-index: 2;
     color: $dark-text-clr;
     transition: background $t3;
+    height: 100dvh;
 
     .container {
         display: flex;

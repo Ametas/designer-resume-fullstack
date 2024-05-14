@@ -82,7 +82,7 @@ export const Resume = (props) => {
   const [activeTab, setActiveTab] = useState('design')
 
   return (
-    <section className='resume'>
+    <section id='resume' className='resume'>
       <Container>
         <div className="resume-content">
           <SectionTitle>Resume</SectionTitle>

@@ -16,7 +16,7 @@ export const About = () => {
   }, [])
 
   return (
-    <section className='about'>
+    <section id='about' className='about'>
       <Container>
         <BorderImage />
         <AboutContent data={aboutProps} />

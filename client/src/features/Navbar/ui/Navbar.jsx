@@ -6,36 +6,28 @@ import { List } from '@features/List';
 
 const navData = [
     {
-        text: 'Home',
-        href: '#hero'
+        text: 'Главная',
+        href: '/#hero'
     },
     {
-        text: 'About',
-        href: '#about'
+        text: 'Обо мне',
+        href: '/#about'
     },
     {
-        text: 'Portfolio',
-        href: '#portfolio'
+        text: 'Портфолио',
+        href: '/#portfolio'
     },
     {
-        text: 'Services',
-        href: '#services'
+        text: 'Сферы услуг',
+        href: '/#services'
     },
     {
-        text: 'Resume',
-        href: '#resume'
+        text: 'Резюме',
+        href: '/#resume'
     },
     {
-        text: 'Client',
-        href: '#client'
-    },
-    {
-        text: 'Blog',
-        href: '#blog'
-    },
-    {
-        text: 'Contact',
-        href: '#contact'
+        text: 'Отзывы',
+        href: '/#testimonials'
     },
 ]
 
@@ -43,7 +35,7 @@ export const Navbar = () => {
   return (
     <nav className={style.navbar}>
       <List data={navData} />
-      <Button variable="primary">Download CV</Button>
+      <Button variable="primary">Заказать</Button>
     </nav>
   )
 }

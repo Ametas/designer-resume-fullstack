@@ -49,7 +49,7 @@ export const Favourite = () => {
 
   const toggleFavourite = async () => {
     try {
-      await axios.patch(`/api/order/${orderList[activeOrder]._id}`, { isFavourite: !isFavourite })
+      await axios.patch(`/api/orders/${orderList[activeOrder]._id}`, { isFavourite: !isFavourite })
       setIsFavourite(!isFavourite)
     } catch (error) {
       console.error('Error in toggleFavourite:', error);
@@ -59,6 +59,7 @@ export const Favourite = () => {
   const updateOrderStatus = async (newStatus) => {
     try {
       await axios.patch(`/api/orderStatus/${orderList[activeOrder]._id}`, { status: newStatus })
+      orderList[activeOrder].status = newStatus
       setOrderStatus(newStatus)
     } catch (error) {
       console.error('Error in updateOrderStatus:', error);
@@ -71,7 +72,6 @@ export const Favourite = () => {
       <OrderList 
         onClick={handleOrderClick} 
         data={orderList} 
-        orderStatus={orderStatus}
       />
       {modal && (
       <Modal
@@ -113,7 +113,7 @@ export const Favourite = () => {
             onClick={toggleFavourite}
             size={'square'}
           >
-            {isFavourite ? <FaRegHeart /> : <FaHeart />}
+            {isFavourite ? <FaHeart /> : <FaRegHeart />}
           </Button>,
         ]}
         >
@@ -123,7 +123,6 @@ export const Favourite = () => {
             <OrderCard 
               key={activeOrder} 
               data={orderList[activeOrder]} 
-              orderStatus={orderStatus}
             />
           )}
         </Modal>

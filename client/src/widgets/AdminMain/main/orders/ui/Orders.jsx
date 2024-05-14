@@ -36,7 +36,6 @@ export const Orders = () => {
     useEffect(() => {
       if (activeOrder !== null) {
         setIsFavourite(orderList[activeOrder].isFavourite || false)
-        setOrderStatus(orderList[activeOrder].status || '')
       }
     }, [activeOrder, orderList])
 
@@ -62,6 +61,7 @@ export const Orders = () => {
     const updateOrderStatus = async (newStatus) => {
       try {
         await axios.patch(`/api/orderStatus/${orderList[activeOrder]._id}`, { status: newStatus })
+        orderList[activeOrder].status = newStatus
         setOrderStatus(newStatus)
       } catch (error) {
         console.error('Error in updateOrderStatus:', error);
@@ -74,7 +74,6 @@ export const Orders = () => {
         <OrderList 
           onClick={handleOrderClick} 
           data={orderList} 
-          orderStatus={orderStatus}
         />
         {modal && (
         <Modal
@@ -126,7 +125,6 @@ export const Orders = () => {
               <OrderCard 
                 key={activeOrder} 
                 data={orderList[activeOrder]} 
-                orderStatus={orderStatus}
               />
             )}
           </Modal>

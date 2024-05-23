@@ -15,13 +15,13 @@ export const AdminHeader = (props) => {
                     <input type="search" placeholder='Поиск' />
                 </div>
             </div>
-            <div className={style.user}>
+            {/* <div className={style.user}>
                 <div className={style["user-info"]}>
                     <span className={style.name}>Ametas</span>
                     <span className={style.role}>Admin</span>
                 </div>
                 <img src={img} className={style["user-image"]} />
-            </div>
+            </div> */}
         </div>
     )
 }

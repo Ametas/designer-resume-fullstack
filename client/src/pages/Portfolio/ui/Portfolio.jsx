@@ -3,7 +3,8 @@ import style from './style.module.scss'
 
 import Container from '@shared/Container/Container'
 import { ImageSlider } from '@shared/ImageSlider'
-import { SectionTitle } from '@shared/SectionTitle'
+import { Navbar } from '@features/Navbar';
+
 import img from '@assets/images/admin-image.jpg'
 
 let portfolioData = [
@@ -265,7 +266,7 @@ export const Portfolio = () => {
   return (
     <section className={style.portfolio}>
       <Container>
-          {/* <SectionTitle>Portfolio</SectionTitle> */}
+          <Navbar />
           <div className={style.cards}>
             {portfolioData.map((item) => (
               <div 

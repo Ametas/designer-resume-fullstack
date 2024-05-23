@@ -34,7 +34,7 @@ const steps = [
     title: 'SpecialRequirements',
   },
   {
-    component: Preferences, //FIX
+    component: Preferences,
     title: 'Preferences',
   },  
   {
@@ -95,38 +95,38 @@ export const OrderForm = () => {
   return (
     <section className={`order`}>
       <Container>
-          <form onSubmit={handleSubmit}>
-            <StepIndicator
-              stepCount={stepCount}
-              step={activeStep}
-              onStepClick={handleStepClick}
-            />
-              <div className="form-steps">
-                {steps.map((item, index) => {
-                  return <item.component 
-                  key={index} isActive={activeStep === index} 
-                  onUpdate={(data) => {handleFormDataChange(item.title, data)}} />
-                })}
-              </div>
-              <div className="btns">
-                <FormBtn 
-                  isHide={activeStep === 0 || activeStep === stepCount} 
-                  btnText="Назад" 
-                  onClick={prevStep} 
-                />
-                <FormBtn 
-                  isHide={activeStep === stepCount - 1 || activeStep === stepCount} 
-                  btnText={'Далее'} 
-                  onClick={nextStep} 
-                />
-                <FormBtn 
-                  isHide={activeStep < stepCount - 1 || activeStep === stepCount} 
-                  btnText={'Отправить заявку'} 
-                  type="submit"
-                  onClick={handleSubmit} 
-                />
-              </div>
-          </form>
+        <form onSubmit={handleSubmit}>
+          <StepIndicator
+            stepCount={stepCount}
+            step={activeStep}
+            onStepClick={handleStepClick}
+          />
+            <div className="form-steps">
+              {steps.map((item, index) => {
+                return <item.component 
+                key={index} isActive={activeStep === index} 
+                onUpdate={(data) => {handleFormDataChange(item.title, data)}} />
+              })}
+            </div>
+            <div className="btns">
+              <FormBtn 
+                isHide={activeStep === 0 || activeStep === stepCount} 
+                btnText="Назад" 
+                onClick={prevStep} 
+              />
+              <FormBtn 
+                isHide={activeStep === stepCount - 1 || activeStep === stepCount} 
+                btnText={'Далее'} 
+                onClick={nextStep} 
+              />
+              <FormBtn 
+                isHide={activeStep < stepCount - 1 || activeStep === stepCount} 
+                btnText={'Отправить заявку'} 
+                type="submit"
+                onClick={handleSubmit} 
+              />
+            </div>
+        </form>
       </Container>
     </section>
   )

@@ -16,7 +16,7 @@ export const PlacementType = (props) => {
 
   const handleCardClick = (card) => { 
     setSelectedCard(card) 
-    props.onUpdate(selectedCard)
+    props.onUpdate(card)
   }
 
   return (

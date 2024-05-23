@@ -91,18 +91,6 @@ function AdminSidebar(props) {
                     />
                 ))}
             </ul>
-            {/* <ul className={style['sidebar-links']}>
-                <h2 className={style.title}>Resume</h2>
-                {sidebarItems.resume.map((item) => (
-                    <SidebarItem 
-                        key={item.id} 
-                        {...item} 
-                        isHide={props.isHide} 
-                        isActive={activeItem === item.id}
-                        onClick={() => handleActiveItem(item.id)}
-                    />
-                ))}
-            </ul> */}
             <ul className={`${style['sidebar-links']} ${style.exit}`}>
                 <SidebarItem 
                     icon={<AiOutlinePoweroff />} 

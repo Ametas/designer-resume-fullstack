@@ -10,10 +10,13 @@
 html, body {
     height: 100%;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
         width: 0;
     }
+
+    
 }
 
 a { text-decoration: none; }

@@ -21,8 +21,8 @@ export const Services = () => {
   return (
     <section id='services' className='services'>
       <Container>
-        <SectionTitle>Why Choose Us</SectionTitle>
-        <Title>Our Work Services</Title>
+        <SectionTitle>Преимущества работы со мной</SectionTitle>
+        <Title>Мои услуги</Title>
         <div className="cards">
           {cardData?.map((item, i) => (
             <Card key={i}

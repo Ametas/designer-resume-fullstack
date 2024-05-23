@@ -18,8 +18,8 @@ export const Testimonial = () => {
   return (
     <section id='testimonials' className='testimonials'>
       <Container>
-        <SectionTitle>Testimonial</SectionTitle>
-        <Title>What Our Client Say About Us</Title>
+        <SectionTitle>Отзывы</SectionTitle>
+        <Title>Опыт клиентов, работавших со мной</Title>
         <div className="testimonial-box">
           {testimonials?.map((item, i) => (
             <TestimonialItem key={i}

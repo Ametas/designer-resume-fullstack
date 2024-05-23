@@ -85,26 +85,26 @@ export const Resume = (props) => {
     <section id='resume' className='resume'>
       <Container>
         <div className="resume-content">
-          <SectionTitle>Resume</SectionTitle>
-          <Title>Skill & Experience</Title>
+          <SectionTitle>Резюме</SectionTitle>
+          <Title>Навыки & Опыт</Title>
           <div className="tabs">
             <Tab 
               onClick={() => {setActiveTab('design')}} 
               isActive={activeTab === 'design'}
             >
-              Design
+              Рабочие инструменты
             </Tab>
             <Tab 
               onClick={() => {setActiveTab('experience')}} 
               isActive={activeTab === 'experience'}
             >
-              Experience
+              Опыт
             </Tab>
             <Tab 
               onClick={() => {setActiveTab('education')}} 
               isActive={activeTab === 'education'}
             >
-              Education
+              Образование
             </Tab>
           </div>
           <SkillBox data={skillData[activeTab]} />

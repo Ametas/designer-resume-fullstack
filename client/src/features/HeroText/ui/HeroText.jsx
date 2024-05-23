@@ -14,12 +14,8 @@ export const HeroText = (props) => {
       <Title>{props.data?.title}</Title>
       <Paragraph>{props.data?.paragraph}</Paragraph>
       <div className='btns'>
-        <Button variable="primary">
-          {props.data?.btns[0]?.btnText} 
-        </Button>
-        <Button variable="secondary">
-          {props.data?.btns[1]?.btnText} 
-        </Button>
+        <a href={props.data?.btns[0]?.btnHref}><Button variable="primary">{props.data?.btns[0]?.btnText}</Button></a>
+        <a href={props.data?.btns[1]?.btnHref}><Button variable="secondary">{props.data?.btns[1]?.btnText}</Button></a>
       </div>
     </div>
   );

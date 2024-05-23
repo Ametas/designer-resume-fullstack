@@ -7,12 +7,12 @@ export const Card = (props) => {
   return (
     <div className={style.card}>
       <div className={style.icon}>
-        <img src={props.img || 'none'} alt="Card Image" />
+        <img src={props.img || ''} alt="Card Image" />
       </div>
       <h2 className={style["card-title"]}>{props.title || 'title'}</h2>
       <p className={style["card-text"]}>{props.text || 'text'}</p>
       <div className={style["card-action"]}>
-        <a href={props.actionHref || 'href'} className={style.action}>
+        <a href={props.actionHref || '#'} className={style.action}>
           <FaArrowRight />
         </a>
         <i className={style["action-text"]}>{props.actionText || 'actionText'}</i>

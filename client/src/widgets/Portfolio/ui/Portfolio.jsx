@@ -10,8 +10,8 @@ export const Portfolio = () => {
   return (
     <section id='portfolio' className='portfolio'>
       <Container>
-        <SectionTitle>Portfolio</SectionTitle>
-        <Title>Some Of My Creative Work</Title>
+        <SectionTitle>Портфолио</SectionTitle>
+        <Title>Некоторые примеры моих работ</Title>
         <PortfolioPreview />
       </Container>
     </section>

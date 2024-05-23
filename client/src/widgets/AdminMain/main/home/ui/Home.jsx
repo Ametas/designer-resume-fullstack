@@ -29,10 +29,10 @@ export const Home = () => {
     <div className={style.home}>
       <AdminTitle>Главная</AdminTitle>
       <div className={style["cards-box"]}>
-        <Card title={'Всего заказов'} icon={<FiUsers />}>{stats.count}</Card>
-        <Card title={'Завершено'} icon={<MdDoneAll />}>{stats.completed}</Card>
-        <Card title={'В ожидании'} icon={<FaRegClock />}>{stats.onHolding}</Card>
-        <Card title={'Отклонено'} icon={<MdRemoveDone />}>{stats.rejected}</Card>
+        <Card title={'Всего заказов'} icon={<FiUsers />}>{stats.count || 0}</Card>
+        <Card title={'Завершено'} icon={<MdDoneAll />}>{stats.completed || 0}</Card>
+        <Card title={'В ожидании'} icon={<FaRegClock />}>{stats.onHolding || 0}</Card>
+        <Card title={'Отклонено'} icon={<MdRemoveDone />}>{stats.rejected || 0}</Card>
       </div>
       <div className={style['charts-box']}>
         <div className={style["chart-item"]}>

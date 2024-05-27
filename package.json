@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server/index.js",
+    "serverdev": "nodemon server/index.js",
     "client": "cd client && npm run dev",
     "server": "node server/index.js",
-    "prod": "npm-run-all --parallel client server"
+    "dev": "npm-run-all --parallel client serverdev"
   },
   "keywords": [],
   "author": "",

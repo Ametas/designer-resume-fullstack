@@ -5,252 +5,95 @@ import Container from '@shared/Container/Container'
 import { ImageSlider } from '@shared/ImageSlider'
 import { Navbar } from '@features/Navbar';
 
-import img from '@assets/images/admin-image.jpg'
-
 let portfolioData = [
   {
     id: 1,
-    img: img,
-    text: 'Однокомнатная квартира в центре Москвы',
+    img: '/src/assets/images/portfolio/apartmentContinent/1/1.jpg',
+    text: 'ЖК Континент',
     slides: [
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
+      '/src/assets/images/portfolio/apartmentContinent/1/1.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/2.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/3.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/4.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/5.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/6.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/7.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/8.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/9.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/10.jpg',
+      '/src/assets/images/portfolio/apartmentContinent/1/11.jpg',
     ],
-    desc: {
-      title: 'Дизайн-проект однокомнатной квартиры',
-      square: 22,
-      include: [
-        'Обмерный план',
-        'План монтажа',
-        'План расстановки мебели',
-        'План электрики',
-        '3Д визуализация',
-        'Смета на ремонт и материалы',
-      ]
-    }
   },
   {
     id: 2,
-    img: img,
-    text: '2',
+    img: '/src/assets/images/portfolio/apartmentOlymp/1/4.jpg',
+    text: 'ЖК Олимп',
     slides: [
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
+      '/src/assets/images/portfolio/apartmentOlymp/1/1.jpg',
+      '/src/assets/images/portfolio/apartmentOlymp/1/2.jpg',
+      '/src/assets/images/portfolio/apartmentOlymp/1/3.jpg',
+      '/src/assets/images/portfolio/apartmentOlymp/1/4.jpg',
+      '/src/assets/images/portfolio/apartmentOlymp/1/5.jpg',
+      '/src/assets/images/portfolio/apartmentOlymp/1/6.jpg',
+      '/src/assets/images/portfolio/apartmentOlymp/1/7.jpg',
+      '/src/assets/images/portfolio/apartmentOlymp/1/8.jpg',
     ],
-    desc: {
-      title: 'Дизайн-проект однокомнатной квартиры',
-      square: 22,
-      include: [
-        'Обмерный план',
-        'План монтажа',
-        'План расстановки мебели',
-        'План электрики',
-        '3Д визуализация',
-        'Смета на ремонт и материалы',
-      ]
-    }
   },
   {
     id: 3,
-    img: img,
-    text: '3',
+    img: '/src/assets/images/portfolio/apartmentUpgrade/1/3.jpg',
+    text: 'ЖК Квартал Апгрейд',
     slides: [
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
+      '/src/assets/images/portfolio/apartmentUpgrade/1/1.jpg',
+      '/src/assets/images/portfolio/apartmentUpgrade/1/2.jpg',
+      '/src/assets/images/portfolio/apartmentUpgrade/1/3.jpg',
     ],
-    desc: {
-      title: 'Дизайн-проект однокомнатной квартиры',
-      square: 22,
-      include: [
-        'Обмерный план',
-        'План монтажа',
-        'План расстановки мебели',
-        'План электрики',
-        '3Д визуализация',
-        'Смета на ремонт и материалы',
-      ]
-    }
   },
   {
     id: 4,
-    img: img,
-    text: '4',
+    img: '/src/assets/images/portfolio/apartmentUpgrade/2/3.jpg',
+    text: 'ЖК Квартал Апгрейд',
     slides: [
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
+      '/src/assets/images/portfolio/apartmentUpgrade/2/1.jpg',
+      '/src/assets/images/portfolio/apartmentUpgrade/2/2.jpg',
+      '/src/assets/images/portfolio/apartmentUpgrade/2/3.jpg',
+      '/src/assets/images/portfolio/apartmentUpgrade/2/4.jpg',
+      '/src/assets/images/portfolio/apartmentUpgrade/2/5.jpg',
+      '/src/assets/images/portfolio/apartmentUpgrade/2/6.jpg',
+      '/src/assets/images/portfolio/apartmentUpgrade/2/7.jpg',
     ],
-    desc: {
-      title: 'Дизайн-проект однокомнатной квартиры',
-      square: 22,
-      include: [
-        'Обмерный план',
-        'План монтажа',
-        'План расстановки мебели',
-        'План электрики',
-        '3Д визуализация',
-        'Смета на ремонт и материалы',
-      ]
-    }
   },
   {
     id: 5,
-    img: img,
-    text: '5',
+    img: '/src/assets/images/portfolio/countryDubrovskie/1/1.jpg',
+    text: 'Загородный дом, поселок Дубровские зори, Московская обл.',
     slides: [
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
+      '/src/assets/images/portfolio/countryDubrovskie/1/1.jpg',
+      '/src/assets/images/portfolio/countryDubrovskie/1/2.jpg',
+      '/src/assets/images/portfolio/countryDubrovskie/1/3.jpg',
+      '/src/assets/images/portfolio/countryDubrovskie/1/4.jpg',
+      '/src/assets/images/portfolio/countryDubrovskie/1/5.jpg',
+      '/src/assets/images/portfolio/countryDubrovskie/1/6.jpg',
+      '/src/assets/images/portfolio/countryDubrovskie/1/7.jpg',
+      '/src/assets/images/portfolio/countryDubrovskie/1/8.jpg',
     ],
-    desc: {
-      title: 'Дизайн-проект однокомнатной квартиры',
-      square: 22,
-      include: [
-        'Обмерный план',
-        'План монтажа',
-        'План расстановки мебели',
-        'План электрики',
-        '3Д визуализация',
-        'Смета на ремонт и материалы',
-      ]
-    }
   },
   {
     id: 6,
-    img: img,
-    text: '6',
+    img: '/src/assets/images/portfolio/privatehouseBogoslovka/1/3.jpg',
+    text: 'Частный дом, с. Богословка, Пензенская обл.',
     slides: [
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
+      '/src/assets/images/portfolio/privatehouseBogoslovka/1/1.jpg',
+      '/src/assets/images/portfolio/privatehouseBogoslovka/1/2.jpg',
+      '/src/assets/images/portfolio/privatehouseBogoslovka/1/3.jpg',
+      '/src/assets/images/portfolio/privatehouseBogoslovka/1/4.jpg',
+      '/src/assets/images/portfolio/privatehouseBogoslovka/1/5.jpg',
+      '/src/assets/images/portfolio/privatehouseBogoslovka/1/6.jpg',
+      '/src/assets/images/portfolio/privatehouseBogoslovka/1/7.jpg',
+      '/src/assets/images/portfolio/privatehouseBogoslovka/1/8.jpg',
     ],
-    desc: {
-      title: 'Дизайн-проект однокомнатной квартиры',
-      square: 22,
-      include: [
-        'Обмерный план',
-        'План монтажа',
-        'План расстановки мебели',
-        'План электрики',
-        '3Д визуализация',
-        'Смета на ремонт и материалы',
-      ]
-    }
   },
-  {
-    id: 7,
-    img: img,
-    text: '7',
-    slides: [
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-    ],
-    desc: {
-      title: 'Дизайн-проект однокомнатной квартиры',
-      square: 22,
-      include: [
-        'Обмерный план',
-        'План монтажа',
-        'План расстановки мебели',
-        'План электрики',
-        '3Д визуализация',
-        'Смета на ремонт и материалы',
-      ]
-    }
-  },
-  {
-    id: 8,
-    img: img,
-    text: '8',
-    slides: [
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-    ],
-    desc: {
-      title: 'Дизайн-проект однокомнатной квартиры',
-      square: 22,
-      include: [
-        'Обмерный план',
-        'План монтажа',
-        'План расстановки мебели',
-        'План электрики',
-        '3Д визуализация',
-        'Смета на ремонт и материалы',
-      ]
-    }
-  },
-  {
-    id: 9,
-    img: img,
-    text: '9',
-    slides: [
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-      img,
-    ],
-    desc: {
-      title: 'Дизайн-проект однокомнатной квартиры',
-      square: 22,
-      include: [
-        'Обмерный план',
-        'План монтажа',
-        'План расстановки мебели',
-        'План электрики',
-        '3Д визуализация',
-        'Смета на ремонт и материалы',
-      ]
-    }
-  },
+  
 ]
 
 export const Portfolio = () => {
@@ -290,15 +133,6 @@ export const Portfolio = () => {
                 <div className={style['card-details']}>
                   <div className={style['card-slider']}>
                     <ImageSlider slides={item.slides} />
-                  </div>
-                  <div className={style['card-details-text']}>
-                    <h1>{item.desc.title} {item.desc.square}м<sup>2</sup></h1>
-                    <ul>
-                      <h2>Включено:</h2>
-                      {item.desc.include.map((option, i) => (
-                        <li key={i}>{option}</li>
-                      ))}
-                    </ul>
                   </div>
                 </div>
               </div>

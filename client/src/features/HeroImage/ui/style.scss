@@ -5,7 +5,15 @@
     background: $clr-3;
     border-radius: 50%;
     display: flex;
+    width: 650px;
     aspect-ratio: 1;
+
+    .designer-image {
+        overflow: hidden;
+        display: flex;
+
+        border-radius: inherit;
+    }
 
     .icon {
         position: absolute;

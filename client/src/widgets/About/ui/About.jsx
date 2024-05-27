@@ -5,6 +5,8 @@ import Container from '@shared/Container/Container';
 import { BorderImage } from '@features/BorderImage';
 import { AboutContent } from '@features/AboutContent';
 
+import img from '@assets/images/designer-photos/7.png'
+
 export const About = () => {
   const [aboutProps, setAboutProps] = useState(null)
 
@@ -18,7 +20,7 @@ export const About = () => {
   return (
     <section id='about' className='about'>
       <Container>
-        <BorderImage />
+        <BorderImage img={img} />
         <AboutContent data={aboutProps} />
       </Container>
     </section>

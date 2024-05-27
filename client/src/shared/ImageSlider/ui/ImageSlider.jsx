@@ -7,14 +7,15 @@ import 'slick-carousel/slick/slick-theme.css'
 
 export const ImageSlider = (props) => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     focusOnSelect: true,
     centerMode: true,
-    arrows: false
+    arrows: false,
+    variableWidth: true,
   }
   
   return (

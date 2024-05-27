@@ -13,7 +13,7 @@ export const AboutContent = (props) => {
       <SectionTitle>Обо мне</SectionTitle>
       <Title>{props.data?.title}</Title>
       <Paragraph>{props.data?.paragraph}</Paragraph>
-      <MySpecs />
+      {/* <MySpecs /> */}
       <a href={props.data?.btn.btnHref}>
         <Button variable={'primary'}>
           {props.data?.btn.btnText}

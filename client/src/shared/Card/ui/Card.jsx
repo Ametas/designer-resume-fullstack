@@ -4,10 +4,11 @@ import style from './style.module.scss'
 import { FaArrowRight } from "react-icons/fa";
 
 export const Card = (props) => {
+  const IconComponent = props.icon || ''
   return (
     <div className={style.card}>
       <div className={style.icon}>
-        <img src={props.img || ''} alt="Card Image" />
+        {IconComponent && <IconComponent />}
       </div>
       <h2 className={style["card-title"]}>{props.title || 'title'}</h2>
       <p className={style["card-text"]}>{props.text || 'text'}</p>

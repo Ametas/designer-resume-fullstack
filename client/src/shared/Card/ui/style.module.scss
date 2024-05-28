@@ -3,11 +3,16 @@
 
 .card {
     background: $clr-1;
-    padding: 50px 40px;
+    padding: 40px;
     display: grid;
     gap: 20px;
     border-radius: $border-radius;
     transition: scale $t3, box-shadow $t3;
+
+    .icon {
+        font-size: 48px;
+        color: $clr-danger;
+    }
 
     &:hover {
         box-shadow: 0 0 10px $clr-3;

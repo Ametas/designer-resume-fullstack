@@ -19,5 +19,5 @@ html, body {
     
 }
 
-a { text-decoration: none; }
+a { text-decoration: none; color: inherit }
 input { &:focus { outline: none; } }

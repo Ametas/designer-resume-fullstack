@@ -10,12 +10,12 @@
     },
     "btns": [
       {
-        "btnText": "Hire me",
-        "btnHref": "#"
+        "btnText": "Заказать",
+        "btnHref": "/order"
       },
       {
-        "btnText": "Download CV",
-        "btnHref": "#"
+        "btnText": "Портфолио",
+        "btnHref": "/portfolio"
       }
     ],
     "navbar": {
@@ -24,16 +24,16 @@
         "btnText": "Download CV"
       }
     },
-    "paragraph": "Conveniently customize proactive web services...",
-    "supTitle": "Welcome to my Portfolio",
-    "title": "Hello, I'm Johan Deo Professional Designer."
+    "paragraph": "Я профессиональный дизайнер с многолетним опытом в создании уникальных и креативных решений в дизайне интерьеров. Моя цель - превратить ваши идеи в реальность.",
+    "supTitle": "Добро пожаловать",
+    "title": "Меня зовут Дарья"
   },
   "about": {
-    "title": "Johan Deo",
-    "paragraph": "I'm Graphic Designer, and I'm very passionate and dedicated to my work With 20 years experience as a professional Photography, I have lot of acquired the skills and knowledge necessary to make your project a success. I enjoy every step the Photography process, from discussion and collaboration.",
+    "title": "Медведева Дарья",
+    "paragraph": "Меня зовут Дарья, и я профессиональный дизайнер интерьеров с более чем [X] лет опыта в индустрии. Моя специализация охватывает создание функциональных и эстетически привлекательных интерьеров для жилых и коммерческих помещений. Я работала с различными клиентами, от частных домовладельцев до крупных корпоративных клиентов, помогая им создать уникальные и комфортные пространства.",
     "btn": {
-      "btnHref": "#",
-      "btnText": "Download CV"
+      "btnHref": "/order",
+      "btnText": "Заказать"
     },
     "specs": [
       {
@@ -74,26 +74,26 @@
     {
       "title": "Computer Graphic",
       "text": "Conveniently and proacvenique and idene solutions easyuse enjoy collaboration...",
-      "actionHref": "#",
-      "actionText": "Hire"
+      "actionHref": "/order",
+      "actionText": "Заказать"
     },
     {
       "title": "Computer Graphic",
       "text": "Conveniently and proacvenique and idene solutions easyuse enjoy collaboration...",
-      "actionHref": "#",
-      "actionText": "Hire"
+      "actionHref": "/order",
+      "actionText": "Заказать"
     },
     {
       "title": "Computer Graphic",
       "text": "Conveniently and proacvenique and idene solutions easyuse enjoy collaboration...",
-      "actionHref": "#",
-      "actionText": "Hire"
+      "actionHref": "/order",
+      "actionText": "Заказать"
     },
     {
       "title": "Computer Graphic",
       "text": "Conveniently and proacvenique and idene solutions easyuse enjoy collaboration...",
-      "actionHref": "#",
-      "actionText": "Hire"
+      "actionHref": "/order",
+      "actionText": "Заказать"
     }
   ],
   "testimonial": [

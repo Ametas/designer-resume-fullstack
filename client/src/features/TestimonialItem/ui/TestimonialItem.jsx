@@ -17,9 +17,6 @@ export const TestimonialItem = (props) => {
         </div>
         <Paragraph>{props.text}</Paragraph>
       </div>
-      <div className={style["author-image"]}>
-        <img src={props.img} alt="Author Image" />
-      </div>
     </div>
   )
 }

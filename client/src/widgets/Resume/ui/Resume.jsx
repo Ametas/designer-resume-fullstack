@@ -8,27 +8,29 @@ import { Tab } from '@shared/Tab';
 import { BorderImage } from '@features/BorderImage';
 import { SkillBox } from '@features/SkillBox';
 
+import img from '@assets/images/designer-photos/7.png'
+
 const skillData = {
   design: [
     {
       id: 1,
-      title: 'Adobe Photoshop',
+      title: 'Autodesk 3ds Max',
       percent: 90
     },
     {
       id: 2,
-      title: 'Adobe Illustrator',
-      percent: 80
+      title: 'AutoCAD',
+      percent: 85
     },
     {
       id: 3,
-      title: 'Adobe XD',
+      title: 'Adobe Photoshop',
       percent: 70
     },
     {
       id: 4,
-      title: 'Figma',
-      percent: 60
+      title: 'SketchUp',
+      percent: 70
     }
   ],
   experience: [
@@ -62,12 +64,12 @@ const skillData = {
     {
       id: 2,
       title: 'Изучение новых материалов тенденций в декоре',
-      percent: 50
+      percent: 70
     },
     {
       id: 3,
       title: 'Развитие навыков в области дизайна интерьеров',
-      percent: 30
+      percent: 85
     },
     {
       id: 4,
@@ -95,12 +97,6 @@ export const Resume = (props) => {
               Рабочие инструменты
             </Tab>
             <Tab 
-              onClick={() => {setActiveTab('experience')}} 
-              isActive={activeTab === 'experience'}
-            >
-              Опыт
-            </Tab>
-            <Tab 
               onClick={() => {setActiveTab('education')}} 
               isActive={activeTab === 'education'}
             >
@@ -110,7 +106,7 @@ export const Resume = (props) => {
           <SkillBox data={skillData[activeTab]} />
         </div>
         <div className="resume-image">
-          <BorderImage />
+          <BorderImage img={img} />
         </div>
       </Container>
     </section>

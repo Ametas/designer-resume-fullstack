@@ -4,9 +4,9 @@
   },
   "header": {
     "socials": {
-      "telegram": "tg",
-      "instagram": "inst",
-      "vk": "vk"
+      "telegram": "TarkhanovaDasha",
+      "instagram": "da5hatarkhanova",
+      "vk": "id51755056"
     },
     "btns": [
       {
@@ -72,45 +72,45 @@
   },
   "services": [
     {
-      "title": "Computer Graphic",
-      "text": "Conveniently and proacvenique and idene solutions easyuse enjoy collaboration...",
+      "title": "3ds Max",
+      "text": "Создание высококачественных 3D моделей и визуализаций в 3ds Max.",
       "actionHref": "/order",
       "actionText": "Заказать"
     },
     {
-      "title": "Computer Graphic",
-      "text": "Conveniently and proacvenique and idene solutions easyuse enjoy collaboration...",
+      "title": "AutoCad",
+      "text": "Профессиональная разработка чертежей и планов в AutoCAD. Точность гарантирована.",
       "actionHref": "/order",
       "actionText": "Заказать"
     },
     {
-      "title": "Computer Graphic",
-      "text": "Conveniently and proacvenique and idene solutions easyuse enjoy collaboration...",
+      "title": "Adobe Photoshop",
+      "text": "Экспертная обработка изображений и создание графики в Photoshop. Уникальные результаты.",
       "actionHref": "/order",
       "actionText": "Заказать"
     },
     {
-      "title": "Computer Graphic",
-      "text": "Conveniently and proacvenique and idene solutions easyuse enjoy collaboration...",
+      "title": "SketchUp",
+      "text": "Моделирование архитектурных проектов и интерьеров в SketchUp. Быстро и точно.",
       "actionHref": "/order",
       "actionText": "Заказать"
     }
   ],
   "testimonial": [
     {
-      "author": "testimonial-author",
-      "authorRole": "author-role",
-      "text": "testimonial-content"
+      "author": "Алексей Петров",
+      "authorRole": "Руководитель отдела продаж",
+      "text": "Отличная работа! Все выполнено с высокой точностью и в срок. Очень доволен результатом."
     },
     {
-      "author": "testimonial-author",
-      "authorRole": "author-role",
-      "text": "testimonial-content"
+      "author": "Мария Смирнова",
+      "authorRole": "Менеджер по маркетингу",
+      "text": "Потрясающее качество и внимание к деталям. Проект превзошел все наши ожидания!"
     },
     {
-      "author": "testimonial-author",
-      "authorRole": "author-role",
-      "text": "testimonial-content"
+      "author": "Иван Кузнецов",
+      "authorRole": "Финансовый аналитик",
+      "text": "Профессиональный подход и великолепное исполнение. Рекомендую всем, кто ценит качество."
     }
   ]
 }]

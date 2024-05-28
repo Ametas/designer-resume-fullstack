@@ -31,7 +31,7 @@ export const Header = () => {
           icon={FaInstagram} 
         />
         <SocialLink 
-          href='telegram.org' 
+          href='t.me'
           socialText={headerProps?.socials.telegram} 
           icon={FaTelegramPlane } 
         />

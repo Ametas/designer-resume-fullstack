@@ -1,0 +1,1 @@
+export const apartmentUpgradeImages = import.meta.glob('./*.jpg', { eager: true });

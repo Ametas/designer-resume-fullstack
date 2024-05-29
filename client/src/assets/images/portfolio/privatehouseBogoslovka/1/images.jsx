@@ -1,0 +1,1 @@
+export const privatehouseBogoslovkaImages = import.meta.glob('./*.jpg', { eager: true });

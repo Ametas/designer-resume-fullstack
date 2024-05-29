@@ -5,93 +5,53 @@ import Container from '@shared/Container/Container'
 import { ImageSlider } from '@shared/ImageSlider'
 import { Navbar } from '@features/Navbar';
 
+import { apartmentContinentImages } from '@assets/images/portfolio/apartmentContinent/1/images.jsx';
+import { apartmentOlympImages } from '@assets/images/portfolio/apartmentOlymp/1/images.jsx';
+import { apartmentUpgradeImages } from '@assets/images/portfolio/apartmentUpgrade/1/images.jsx';
+import { apartmentUpgradeImages2 } from '@assets/images/portfolio/apartmentUpgrade/2/images.jsx';
+import { countryDubrovskieImages } from '@assets/images/portfolio/countryDubrovskie/1/images.jsx';
+import { privatehouseBogoslovkaImages } from '@assets/images/portfolio/privatehouseBogoslovka/1/images.jsx';
+
+const formatImages = (imageImports) => {
+  return Object.keys(imageImports).map((key) => imageImports[key].default);
+};
+
 let portfolioData = [
   {
     id: 1,
-    img: '/src/assets/images/portfolio/apartmentContinent/1/1.jpg',
+    img: formatImages(apartmentContinentImages)[0],
     text: 'ЖК Континент',
-    slides: [
-      '/src/assets/images/portfolio/apartmentContinent/1/1.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/2.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/3.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/4.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/5.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/6.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/7.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/8.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/9.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/10.jpg',
-      '/src/assets/images/portfolio/apartmentContinent/1/11.jpg',
-    ],
+    slides: formatImages(apartmentContinentImages),
   },
   {
     id: 2,
-    img: '/src/assets/images/portfolio/apartmentOlymp/1/4.jpg',
+    img: formatImages(apartmentOlympImages)[3],
     text: 'ЖК Олимп',
-    slides: [
-      '/src/assets/images/portfolio/apartmentOlymp/1/1.jpg',
-      '/src/assets/images/portfolio/apartmentOlymp/1/2.jpg',
-      '/src/assets/images/portfolio/apartmentOlymp/1/3.jpg',
-      '/src/assets/images/portfolio/apartmentOlymp/1/4.jpg',
-      '/src/assets/images/portfolio/apartmentOlymp/1/5.jpg',
-      '/src/assets/images/portfolio/apartmentOlymp/1/6.jpg',
-      '/src/assets/images/portfolio/apartmentOlymp/1/7.jpg',
-      '/src/assets/images/portfolio/apartmentOlymp/1/8.jpg',
-    ],
+    slides: formatImages(apartmentOlympImages),
   },
   {
     id: 3,
-    img: '/src/assets/images/portfolio/apartmentUpgrade/1/3.jpg',
+    img: formatImages(apartmentUpgradeImages)[2],
     text: 'ЖК Квартал Апгрейд',
-    slides: [
-      '/src/assets/images/portfolio/apartmentUpgrade/1/1.jpg',
-      '/src/assets/images/portfolio/apartmentUpgrade/1/2.jpg',
-      '/src/assets/images/portfolio/apartmentUpgrade/1/3.jpg',
-    ],
+    slides: formatImages(apartmentUpgradeImages)
   },
   {
     id: 4,
-    img: '/src/assets/images/portfolio/apartmentUpgrade/2/3.jpg',
+    img: formatImages(apartmentUpgradeImages2)[3],
     text: 'ЖК Квартал Апгрейд',
-    slides: [
-      '/src/assets/images/portfolio/apartmentUpgrade/2/1.jpg',
-      '/src/assets/images/portfolio/apartmentUpgrade/2/2.jpg',
-      '/src/assets/images/portfolio/apartmentUpgrade/2/3.jpg',
-      '/src/assets/images/portfolio/apartmentUpgrade/2/4.jpg',
-      '/src/assets/images/portfolio/apartmentUpgrade/2/5.jpg',
-      '/src/assets/images/portfolio/apartmentUpgrade/2/6.jpg',
-      '/src/assets/images/portfolio/apartmentUpgrade/2/7.jpg',
-    ],
+    slides: formatImages(apartmentUpgradeImages2),
   },
   {
     id: 5,
-    img: '/src/assets/images/portfolio/countryDubrovskie/1/1.jpg',
+    img: formatImages(countryDubrovskieImages)[0],
     text: 'Загородный дом, поселок Дубровские зори, Московская обл.',
-    slides: [
-      '/src/assets/images/portfolio/countryDubrovskie/1/1.jpg',
-      '/src/assets/images/portfolio/countryDubrovskie/1/2.jpg',
-      '/src/assets/images/portfolio/countryDubrovskie/1/3.jpg',
-      '/src/assets/images/portfolio/countryDubrovskie/1/4.jpg',
-      '/src/assets/images/portfolio/countryDubrovskie/1/5.jpg',
-      '/src/assets/images/portfolio/countryDubrovskie/1/6.jpg',
-      '/src/assets/images/portfolio/countryDubrovskie/1/7.jpg',
-      '/src/assets/images/portfolio/countryDubrovskie/1/8.jpg',
-    ],
+    slides: formatImages(countryDubrovskieImages),
   },
   {
     id: 6,
-    img: '/src/assets/images/portfolio/privatehouseBogoslovka/1/3.jpg',
+    img: formatImages(privatehouseBogoslovkaImages)[2],
     text: 'Частный дом, с. Богословка, Пензенская обл.',
-    slides: [
-      '/src/assets/images/portfolio/privatehouseBogoslovka/1/1.jpg',
-      '/src/assets/images/portfolio/privatehouseBogoslovka/1/2.jpg',
-      '/src/assets/images/portfolio/privatehouseBogoslovka/1/3.jpg',
-      '/src/assets/images/portfolio/privatehouseBogoslovka/1/4.jpg',
-      '/src/assets/images/portfolio/privatehouseBogoslovka/1/5.jpg',
-      '/src/assets/images/portfolio/privatehouseBogoslovka/1/6.jpg',
-      '/src/assets/images/portfolio/privatehouseBogoslovka/1/7.jpg',
-      '/src/assets/images/portfolio/privatehouseBogoslovka/1/8.jpg',
-    ],
+    slides: formatImages(privatehouseBogoslovkaImages),
   },
   
 ]

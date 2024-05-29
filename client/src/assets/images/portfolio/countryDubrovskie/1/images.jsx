@@ -1,0 +1,1 @@
+export const countryDubrovskieImages = import.meta.glob('./*.jpg', { eager: true });

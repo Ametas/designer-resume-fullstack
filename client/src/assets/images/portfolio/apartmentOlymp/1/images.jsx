@@ -1,0 +1,1 @@
+export const apartmentOlympImages = import.meta.glob('./*.jpg', { eager: true });

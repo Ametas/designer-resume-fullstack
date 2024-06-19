@@ -18,6 +18,7 @@ export const OrderCard = (props) => {
 
   let rooms = props.data?.ObjectDetails.roomsCount
   let square = props.data?.ObjectDetails.objectSquare
+  let lightPreferences = props.data?.ObjectDetails.lightPreferences
 
   let placementType = props.data?.PlacementType.text
 
@@ -26,12 +27,13 @@ export const OrderCard = (props) => {
   let interiorStyle = props.data?.Preferences['interior-style']
   let materials = props.data?.Preferences['materials-and-texture']
   let colorScheme = props.data?.Preferences['color-scheme']
+  let functionalRequests = props.data?.Preferences['functional-requirements']
 
-  let functionalRequests
 
   let comments = props.data?.Commentaries
 
   let status = props.data?.status
+  {console.log(props.data)}
 
 
   // const { 
@@ -124,12 +126,22 @@ export const OrderCard = (props) => {
             <i>Стиль интерьера</i>
           </span>
           <span>
-            {interiorStyle}
-            <i>Стиль интерьера</i>
+            {lightPreferences}
+            <i>Освещение</i>
           </span>
           <span>
-            {interiorStyle}
-            <i>Стиль интерьера</i>
+            {materials}
+            <i>Материалы и текстура</i>
+          </span>
+          <span>
+            {functionalRequests}
+            <i>Функциональные треб-я</i>
+          </span>
+        </div>
+        <div className={style.prefs}>
+          <span>
+            {colorScheme}
+            <i>Цветовая схема</i>
           </span>
         </div>
       </div>

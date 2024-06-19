@@ -38,7 +38,8 @@
             flex-direction: column;
         }
 
-        .placement-info {
+        .placement-info,
+        .prefs {
             display: flex;
             flex-flow: row wrap;
 
@@ -48,7 +49,8 @@
         }
 
         .client-info, 
-        .placement-info {
+        .placement-info,
+        .prefs {
             gap: 10px;
 
             & > div {
